@@ -1,4 +1,4 @@
-# [WordPress](https://wordpress.org/) on [Heroku](http://heroku.com)
+## [WordPress](https://wordpress.org/) on [Heroku](http://heroku.com)
 
 Project Information:
 
