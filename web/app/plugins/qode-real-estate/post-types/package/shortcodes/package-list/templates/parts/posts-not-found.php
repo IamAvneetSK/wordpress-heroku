@@ -1,1 +1,0 @@
-<p class="qodef-package-not-found"><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'qode-real-estate' ); ?></p>

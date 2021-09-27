@@ -1,1 +1,0 @@
-<?php echo qode_tours_get_tour_destination_html(); ?>
