@@ -1,0 +1,42 @@
+<wpml-config>
+	<custom-fields>
+        <custom-field action="translate">qode_restaurant_menu_item_price</custom-field>
+        <custom-field action="translate">qode_restaurant_menu_item_description</custom-field>
+        <custom-field action="translate">qode_restaurant_menu_item_label</custom-field>
+    </custom-fields>
+	<custom-types>
+		<custom-type translate="1">qode-restaurant-menu</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">qode-restaurant-menu-category</taxonomy>
+	</taxonomies>
+	<admin-texts>
+        <key name="qode_options_proya">
+            <key name="wh_monday_description" />
+            <key name="wh_tuesday_description" />
+            <key name="wh_wednesday_description" />
+            <key name="wh_thursday_description" />
+            <key name="wh_friday_description" />
+            <key name="wh_saturday_description" />
+            <key name="wh_sunday_description" />
+        </key>
+    </admin-texts>
+	<shortcodes>
+		<shortcode>
+			<tag>qode_restaurant_menu_list</tag>
+			<attributes>
+				<attribute>restaurant_menu_title</attribute>
+				<attribute>restaurant_menu_label</attribute>
+				<attribute>restaurant_menu_sublabel</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>qode_working_hours</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>label</attribute>
+				<attribute>sublabel</attribute>
+			</attributes>
+		</shortcode>
+	</shortcodes>
+</wpml-config>

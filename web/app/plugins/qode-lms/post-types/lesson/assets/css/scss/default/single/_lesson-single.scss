@@ -1,0 +1,22 @@
+.qode-lesson-single-holder {
+	.qode-lms-lesson-content-wrapper {
+		padding: 28px 15% 24px;
+
+        .qode-lms-lesson-single-title{
+            margin-bottom: 15px;
+        }
+
+        .qode-lms-lesson-complete{
+            margin-top: 15px;
+        }
+	}
+    .qode-lms-message {
+        color: $first-main-color;
+        span {
+            vertical-align: middle;
+        }
+        .qode-lms-message-text {
+            padding-left: 5px;
+        }
+    }
+}

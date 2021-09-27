@@ -1,0 +1,29 @@
+.qodef-re-profile-searches-holder {
+    table {
+        margin-top: 51px;
+    }
+
+    .qodef-property-search {
+        display: inline-block;
+        vertical-align: middle;
+        button {
+            background: transparent;
+            display: inline-block;
+            outline: 0;
+            box-shadow: none;
+            padding: 0;
+            -webkit-appearance: none;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+    .qodef-undo-query-save {
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 7px;
+    }
+    .qodef-query-search-page {
+        font-size: 18px;
+        color: #b3b2b2;
+    }
+}

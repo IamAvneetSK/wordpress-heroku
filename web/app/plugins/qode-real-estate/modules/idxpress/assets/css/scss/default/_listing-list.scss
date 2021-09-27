@@ -1,0 +1,30 @@
+/* IDX PLUGIN LISTING LIST STYLE OVERRIDE - BEGIN */
+
+.dsidx-results {
+    .dsidx-prop-summary {
+        div {
+            a img {
+                border: 0 !important;
+            }
+        }
+        .dsidx-prop-title {
+            b {
+                color: $first-main-color;
+                a {
+                    color: #000;
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+        }
+        .dsidx-prop-features {
+            > div {
+                color: #000;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/* IDX PLUGIN LISTING LIST STYLE OVERRIDE - END */

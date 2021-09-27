@@ -1,0 +1,44 @@
+.single-qode-event{
+	.qode-event-single-holder{
+
+		.two_columns_33_66{
+			&>.column1{
+				.column_inner{
+					padding-right: 60px;
+				}
+			}
+			&>.column2{
+				.column_inner{
+					padding-left: 0;
+				}
+			}
+		}
+
+		.qode-event-image-buy-tickets-holder{
+			.qode-event-details-holder{
+
+				margin-top: 50px;
+				
+				.qode-event-section-title{
+					margin-bottom: 20px;
+				}
+
+				.qode-event-details{
+					margin-bottom: 40px;
+				}
+
+				.qode-event-details-website{
+					a{
+						color: inherit;
+					}
+				}
+				
+			}
+		}
+		.qode-event-info-holder{
+			.qode-event-content-holder{
+				margin-top: 57px;
+			}
+		}
+	}
+}

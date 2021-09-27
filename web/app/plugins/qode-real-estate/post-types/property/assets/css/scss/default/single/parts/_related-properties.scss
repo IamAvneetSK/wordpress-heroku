@@ -1,0 +1,32 @@
+/* Related properties section start */
+.qodef-property-related-posts-holder {
+    padding: 15px 0;
+    border-bottom: 1px solid $default-border-color;
+
+    .qodef-property-related-posts-title {
+        margin: 0 0 20px;
+    }
+
+    h5 {
+        margin: 0;
+    }
+
+    .qodef-property-list-holder.qodef-pl-layout-standard {
+        .qodef-pl-item {
+            .qodef-pl-item-inner {
+                .qodef-item-bottom-section{
+                    padding-top: 15px;
+                }
+
+                .qodef-item-bottom-section-content{
+                    h5,
+                    h5 a{
+                        font-size: 15px;
+                        line-height: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Related properties section end */

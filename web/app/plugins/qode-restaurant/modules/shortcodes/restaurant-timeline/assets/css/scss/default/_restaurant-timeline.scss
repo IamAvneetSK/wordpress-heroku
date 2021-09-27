@@ -1,0 +1,52 @@
+.qode-restaurant-timeline{
+
+    .qode-restaurant-timeline-inner{
+        text-align: center;
+        padding-top: 200px;
+        width: 100%;
+    }
+
+    .qode-rt-item {
+        width: 49%;
+        padding: 0 20px 100px;
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        vertical-align: top;
+
+        &:nth-of-type(odd){
+            top: -200px;
+            margin-bottom: -200px;
+            float: left;
+        }
+
+        .qode-rt-item-title {
+            h2 {
+                margin: 0;
+            }
+        }
+
+        .qode-rt-item-line {
+            background-color: #c2c2c2;
+            width: 1px;
+            height: 100px;
+            margin: 30px 0 30px 30px;
+        }
+
+        .qode-rt-item-image{
+            margin-bottom: 40px;
+        }
+
+        .qode-rt-item-text {
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .qode-rt-item-separator{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+}

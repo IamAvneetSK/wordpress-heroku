@@ -1,0 +1,127 @@
+/* Author archive template for property roles */
+.qodef-re-author-holder {
+    margin-top: 84px;
+    /* Info section styles */
+    .qodef-re-author-info-section {
+        margin-bottom: 56px;
+    }
+
+    .qodef-author-image {
+        display: inline-block;
+        float: left;
+        width: 550px;
+        img {
+            border-radius: 100%;
+        }
+    }
+
+    .qodef-author-info {
+        display: inline-block;
+        float: left;
+        width: calc(100% - 550px);
+        box-sizing: border-box;
+        padding-left: 93px;
+        padding-top: 42px;
+    }
+
+    .qodef-re-author-title-holder {
+        margin-bottom: 16px;
+        .qodef-re-author-title {
+            margin: 0;
+            font-weight: 500;
+        }
+        .qodef-re-author-description {
+            margin: 0;
+            font-weight: 400;
+            color: #e1e1e1;
+
+            &.qodef-author-role {
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .qodef-re-author-image {
+        line-height: 0;
+    }
+
+    .qodef-re-author-description-holder {
+        margin-bottom: 34px;
+        p {
+            margin: 0;
+        }
+    }
+    
+    .qodef-re-author-contact-section {
+        margin-bottom: 33px;
+    }
+    
+    .qodef-re-contact-item {
+        .qodef-contact-label {
+            display: block;
+            @include qodeH6();
+            margin-bottom: 13px;
+        }
+        .qodef-contact-value {
+            display: block;
+            @include qodeH6();
+        }
+    }
+    
+    .qodef-contact-social-icons {
+        a {
+            margin-right: 12px;
+            font-size: 13px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .qodef-re-author-contact {
+        .qodef-re-contact-item {
+            margin-bottom: 2px;
+            .qodef-contact-icon {
+                font-size: 13px;
+                color: $default-heading-color;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .qodef-re-author-footer {
+        &.qodef-author-social {
+            margin-top: 59px;
+            .qodef-re-social-label {
+                margin: 0 0 10px 0;
+            }
+            .qodef-contact-social-icons {
+                a {
+                    margin-right: 12px;
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+        }
+
+        &.qodef-author-agents {
+            margin-top: 32px;
+            h5 {
+                margin: 0 0 17px;
+            }
+            img {
+                border-radius: 100%;
+            }
+        }
+    }
+
+    /* List section styles */
+    .qodef-re-author-properties-section {
+        margin-bottom: 80px;
+        .qodef-re-properties-title {
+            margin: 0 0 40px;
+        }
+    }
+}

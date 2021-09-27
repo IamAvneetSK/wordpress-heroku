@@ -1,0 +1,106 @@
+.qode-course-reviews-list-top {
+
+	.qode-grid-row{
+		display: table;
+		width: 100%;
+		margin: 0;
+
+		.qode-grid-col-3,
+		.qode-grid-col-9{
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0;
+			float: none;
+		}
+	}
+
+	margin-bottom: 50px;
+
+	.qode-course-reviews-number-wrapper {
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		vertical-align: middle;
+	}
+	.qode-course-reviews-number {
+		font-size: 72px;
+		color: #ffd740;
+		font-weight: 700;
+		line-height: 1em;
+		margin-right: 22px;
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		top:-3px;
+	}
+
+	.qode-course-stars-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 5px;
+		.qode-course-stars {
+			display: block;
+			i {
+				color: #ffd740;
+			}
+		}
+	}
+
+	.qode-course-reviews-count {
+		font-weight: 700;
+		font-size: 14px;
+	}
+
+	.qode-course-rating-percente-wrapper {
+		padding:29px 50px 40px ;
+
+		.q_progress_bar{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.qode-course-reviews-list {
+	.qode-comment-holder {
+		.qode-review-rating {
+			display: inline-block;
+			.qode-rating-label{
+				margin-right: 10px;
+			}
+			.qode-rating-value{
+				color: #ffd740;
+			}
+		}
+
+		.qode-review-title {
+			font-weight: 600;
+			font-size: 15px;
+		}
+
+		.qode-comment-name {
+			margin-bottom: 5px;
+		}
+
+		.qode-text-holder p {
+			margin-top: 3px;
+		}
+	}
+
+	.qode-comment-form {
+		.qode-comment-input-title,
+		.qode-comment-input-text,
+		.qode-comment-form-rating{
+			label {
+				margin-right: 10px;
+			}
+			&>.qode-comment-rating-box{
+
+			}
+		}
+
+		.qode-comment-rating-box {
+			display: block;
+			margin-left: 0;
+		}
+	}
+}

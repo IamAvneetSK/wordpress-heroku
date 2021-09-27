@@ -1,0 +1,36 @@
+@include ipad-landscape {
+
+    .qodef-package-list-holder {
+
+        $gallery_columns_number: ('four', 'five', 'six');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.qodef-pckgl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                article {
+                    width: 33.33%;
+                }
+
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    article {
+
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+
+    .qodef-package-list-holder {
+
+        article {
+            width: 100% !important; // !important is set to override all other stronger selectors
+        }
+    }
+}

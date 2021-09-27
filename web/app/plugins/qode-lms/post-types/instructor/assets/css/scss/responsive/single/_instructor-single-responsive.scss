@@ -1,0 +1,22 @@
+@include phone-portrait{
+	.qode-instructor-single-holder{
+		.qode-instructor-single-outer{
+			.qode-instructor-single-info-holder{
+				.qode-ts-content-holder{
+					.qode-tabs{
+						.qode-tabs-nav{
+							width: 100%;
+							li{
+								width: 100%;
+								a{
+									width: 100%;
+									box-sizing: border-box;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

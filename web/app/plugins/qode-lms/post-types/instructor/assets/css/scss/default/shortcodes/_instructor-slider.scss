@@ -1,0 +1,42 @@
+/* ==========================================================================
+# Instructor slider - begin
+	========================================================================== */
+
+.qode-instructor-slider-holder {
+    .qode-owl-slider {
+        .owl-nav {
+
+            .owl-prev,
+            .owl-next{
+                background-color: $first-main-color;
+                width: 55px;
+                height: 55px;
+                @include qodeBorderRadius(5px);
+                text-align: center;
+
+                .qode-prev-icon,
+                .qode-next-icon{
+                    font-size: 25px;
+                    color: #fff;
+                    line-height: 55px;
+                }
+            }
+            .owl-prev {
+                left: -90px;
+            }
+
+            .owl-next {
+                right: -90px;
+            }
+        }
+    }
+    .qode-large-space{
+        .qode-outer-space{
+            margin: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+# Instructor slider - end
+	========================================================================== */

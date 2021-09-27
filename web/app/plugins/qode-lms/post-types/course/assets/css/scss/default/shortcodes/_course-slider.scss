@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Course Slider shortcode style - begin
+   ========================================================================== */
+
+.qode-course-slider-holder {
+    @include qodeRelativeHolderLayout();
+
+    .qode-cl-inner {
+        margin: 0 !important;
+    }
+
+    article {
+        width: auto !important;
+        padding: 10px !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+
+    .qode-course-list-holder {
+
+        .owl-nav {
+
+            .owl-prev,
+            .owl-next {
+
+                &:hover{
+                    background-color: $header-light-color;
+                }
+
+                background-color: $first-main-color;
+                width: 55px;
+                height: 55px;
+                @include qodeBorderRadius(5px);
+                @include qodeTransition(all 0.3s ease);
+                @include qodeBoxShadow(3px 4px 8px 0px rgba($first-main-color, 0.1));
+                text-align: center;
+
+                &:hover {
+
+                    .qode-prev-icon,
+                    .qode-next-icon {
+                        height: 100%;
+                        color: #fff;
+
+                    }
+                }
+            }
+
+            .owl-prev{
+                left: -90px;
+            }
+
+            .owl-next{
+                right: -90px;
+            }
+
+            .qode-prev-icon,
+            .qode-next-icon {
+                font-size: 25px;
+                line-height: 55px;
+                color: $header-light-color;
+            }
+
+        }
+
+
+        &.qode-nav-dark-skin {
+            .owl-nav{
+                .owl-prev,
+                .owl-next{
+                    .qode-prev-icon,
+                    .qode-next-icon {
+                        color: #fff;
+                    }
+
+                    &:hover{
+                        background-color: #292d33;
+                    }
+
+                    .qode-prev-icon,
+                    .qode-next-icon {
+                        color: #fff!important;
+                    }
+                }
+            }
+        }
+
+        &.qode-nav-light-skin {
+            .owl-nav{
+                .owl-prev,
+                .owl-next{
+                    .qode-prev-icon,
+                    .qode-next-icon {
+                        color: #fff;
+                    }
+
+                    &:hover{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+        &.qode-pag-light-skin {
+
+            .owl-dots {
+
+                .owl-dot {
+
+                    span {
+                        background-color: rgba($header-light-color, .2);
+                    }
+
+                    &.active,
+                    &:hover {
+
+                        span {
+                            background-color: $header-light-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.qode-pag-dark-skin {
+
+            .owl-dots {
+
+                .owl-dot {
+
+                    span {
+                        background-color: rgba($header-dark-color, .2);
+                    }
+
+                    &.active,
+                    &:hover {
+
+                        span {
+                            background-color: $header-dark-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.qode-pag-on-slider {
+
+            .owl-nav {
+
+                .owl-prev,
+                .owl-next {
+                    @include qodeTransform(translateY(-50%));
+                }
+            }
+
+            .owl-dots {
+                position: absolute;
+                left: 0;
+                bottom: 20px;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Course Slider shortcode style - end
+   ========================================================================== */

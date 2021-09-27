@@ -1,0 +1,48 @@
+.qodef-property-list-holder {
+    .qodef-property-list-filter-part {
+        .qodef-range-slider-response-holder {
+            margin: 0 0 7px;
+            color: #444444;
+            font-size: 13px;
+            font-weight: 600;
+            font-family: 'Overpass', sans-serif;
+
+            .qodef-min-price-value {
+                color: #000;
+            }
+        }
+
+        .qodef-range-slider-wrapper {
+            height: 36px;
+        }
+        .qodef-range-slider {
+            position: relative;
+            height: 2px;
+            background-color: #d8d8d8;
+            top: 50%;
+
+            .ui-slider-range {
+                position: absolute;
+                display: block;
+                height: 100%;
+                background-color: $first-main-color;
+                z-index: 1;
+            }
+            .ui-slider-handle {
+                position: absolute;
+                top: -4px;
+                height: 9px;
+                width: 9px;
+                background-color: $first-main-color;
+                margin: 0 0 0 -1px;
+                cursor: pointer;
+                outline: 0;
+                z-index: 2;
+                border-radius: 50%;
+                &:last-child {
+                    @include qodeTransform(translateX(-50%));
+                }
+            }
+        }
+    }
+}

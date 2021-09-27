@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Layout 1 style - begin
+   ========================================================================== */
+
+.qode-layout1.qode-show-numbers{
+	counter-reset: item;
+}
+
+.qode-layout1 .qode-news-layout-title{
+	margin-bottom: 25px;
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #a9a9a9;
+}
+
+.qode-layout1-item{
+	text-align: center;
+
+	.qode-left-alignment &{
+		text-align: left;
+
+		.qode-post-info-category a{
+			margin-left: 0;
+		}
+	}
+
+	.qode-right-alignment &{
+		text-align: right;
+
+		.qode-post-info-category a{
+			margin-right: 0;
+		}
+	}
+
+	.qode-show-numbers &:after{
+
+		counter-increment: item;
+		content: counter(item);
+		position: absolute;
+		top: -5px;
+		right: 20px;
+		font-size: 98px;
+		line-height: 98px;
+		font-weight: 500;
+		color: #d6cffb;
+		z-index: -1;
+	}
+
+	.qode-ni-info-top{
+		margin-bottom: 7px;
+	}
+
+	.qode-news-item-image-holder{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.qode-post-info-category{
+		top: -14px;
+	}
+
+	.qode-post-title{
+		margin-top: -7px;
+		margin-bottom: 13px;
+	}
+
+	.qode-post-info-date{
+		margin-bottom: 13px;
+	}
+
+	.qode-post-excerpt-holder,
+	.qode-post-info-author{
+		margin-bottom: 13px;
+	}
+
+}
+
+.wpb_widgetised_column,
+aside.sidebar {
+	.qode-news-layout1-widget {
+		> h5 {
+			margin: 0;
+			padding-bottom: 25px;
+			border-bottom: 1px dotted #a9a9a9;
+		}
+
+		.qode-layout1-item {
+			padding-top: 25px !important;
+			padding-bottom: 20px !important;
+			border-bottom: 1px dotted #a9a9a9;
+
+			&:last-child {
+				border: 0;
+			}
+
+			.qode-post-title {
+				margin-bottom: 6px;
+			}
+		}
+
+		.qode-ni-content div:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.drop_down .second .inner .qode-layout1-item{
+	a{
+		padding: 0 !important;
+		color: inherit;
+		font-size: inherit;
+		font-style: inherit;
+		text-transform: inherit;
+		letter-spacing: inherit;
+		line-height: inherit;
+		font-weight: inherit;
+	}
+
+	.qode-post-info-category a{
+		color: #fff;
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 0 5px 10px;
+	}
+
+	.qode-post-info-date a{
+		font-size: 14px;
+		color: #545454;
+		text-transform: none;
+		letter-spacing: 0;
+		font-weight: 400;
+
+		i{
+			display: inline-block;
+		}
+	}
+}
+
+/* ==========================================================================
+   Layout 1 shortcode style - end
+   ========================================================================== */

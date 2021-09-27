@@ -1,0 +1,38 @@
+.qodef-property-list-holder {
+    .qodef-property-list-filter-part {
+
+        .qodef-filter-row.qodef-filter-section-action {
+            margin: 0 -3px 50px;
+        }
+
+        .qodef-property-filter-button-holder {
+            width: 33.33%;
+            float: left;
+            position: relative;
+            padding: 0 3px;
+            box-sizing: border-box;
+
+            .qbutton {
+                width: 100%;
+                box-sizing: border-box !important;
+                text-align: center;
+            }
+        }
+
+        .qodef-query-result {
+            display: block;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            width: 100%;
+        }
+
+        .qodef-undo-query-save {
+            cursor: pointer;
+        }
+
+        .qodef-undo-query-message {
+            padding-right: 3px;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+.qodef-property-type-list-holder {
+    &.qodef-light-skin {
+        .qodef-taxonomy-icon, .qodef-ptl-item-title {
+            color: #fff;
+        }
+
+        .qodef-ptl-item-title {
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 1px;
+                background-color: #fff;
+                width: 100%;
+                bottom: 7px;
+            }
+        }
+    }
+
+    .qodef-ptl-item {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 0 22px;
+        line-height: 31px;
+        color: #000;
+        text-transform: uppercase;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .qodef-ptl-item-title {
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 1px;
+                background-color: #000;
+                width: 100%;
+                bottom: 7px;
+            }
+        }
+
+        &:hover {
+
+            .qodef-ptl-item-title {
+                &:before { 
+                    @include qodeTransform(scale(1,1));
+                     @include qodeTransitionTransform(.2s ease-in-out .15s);
+                }
+
+                &:after { 
+                    @include qodeTransform(scale(0,1));
+                    @include qodeTransitionTransform(.15s ease-in-out 0s);
+                }
+            }
+        }
+    }
+    .qodef-ptl-item-inner {
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .qodef-ptl-item-image {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .qodef-taxonomy-image {
+        line-height: 0;
+        display: block;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .qodef-taxonomy-icon {
+        display: block;
+        font-size: 16px;
+        color: $default-heading-color;
+    }
+
+    .qodef-ptl-item-title {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        font-size: 11px;
+        top: -2px;
+        letter-spacing: 0.15em;
+        font-weight: 500;
+        color: $default-heading-color;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1px;
+            background-color: #000;
+            width: 100%;
+            bottom: 7px;
+            @include qodeTransitionTransform(none);
+        }
+
+        &:before {
+            transform-origin:left;
+            @include qodeTransform(scale(0,1));
+        }
+
+        &:after {
+            transform-origin:right;
+        }
+    }
+
+    .qodef-ptl-item-link {
+        @include qodeAbsoluteHolderLayout();
+    }
+
+    $gallery_columns_number: ('two', 'three', 'four', 'five', 'six');
+
+    @for $i from 0 to length($gallery_columns_number) {
+        &.qodef-ptl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+            li {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) {
+                // set different break point for four, five and six columns
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    li {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                            border-left: 0;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    li {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                            border-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** List Columns Style - end *****/
+}

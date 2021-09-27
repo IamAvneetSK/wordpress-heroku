@@ -1,0 +1,962 @@
+# Copyright (C) 2020 Qode Themes
+# This file is distributed under the same license as the Qode Music plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Qode Music 2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/qode-music\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-09-18T12:43:51+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: qode-music\n"
+
+#. Plugin Name of the plugin
+#: helpers.php:288
+msgid "Qode Music"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds music features to our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Qode Themes"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:9
+msgid "Album General"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:18
+#: post-types/albums/admin/options/albums-options-map.php:22
+#: post-types/albums/shortcodes/album.php:57
+#: post-types/albums/shortcodes/elementor-album.php:43
+msgid "Album Skin"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:21
+#: post-types/albums/admin/options/albums-options-map.php:25
+#: post-types/albums/shortcodes/album-player.php:100
+#: post-types/albums/shortcodes/album.php:62
+#: post-types/albums/shortcodes/elementor-album-player.php:103
+#: post-types/albums/shortcodes/elementor-album.php:48
+msgid "Light"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:22
+#: post-types/albums/admin/options/albums-options-map.php:26
+#: post-types/albums/shortcodes/album-player.php:101
+#: post-types/albums/shortcodes/album.php:61
+#: post-types/albums/shortcodes/elementor-album-player.php:104
+#: post-types/albums/shortcodes/elementor-album.php:47
+msgid "Dark"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:32
+#: post-types/albums/admin/options/albums-options-map.php:36
+msgid "Album Type"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:35
+#: post-types/albums/shortcodes/album.php:60
+#: post-types/albums/shortcodes/elementor-album.php:46
+#: post-types/events/admin/meta-boxes/events-meta-boxes.php:21
+msgid "Default"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:36
+#: post-types/albums/admin/options/albums-options-map.php:39
+msgid "Album Comprehensive"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:37
+#: post-types/albums/admin/options/albums-options-map.php:40
+msgid "Album Minimal"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:38
+#: post-types/albums/admin/options/albums-options-map.php:41
+msgid "Album Compact"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:48
+msgid "Release Date"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:60
+msgid "People"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:70
+msgid "Latest Video Link"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:71
+msgid "Enter Video Link"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:81
+msgid "\"Back To\" Link"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:82
+msgid "Choose \"Back To\" page to link from album single page"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:92
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:99
+msgid "Tracks"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:104
+msgid "Audio File"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:109
+#: post-types/albums/shortcodes/albums-list.php:66
+#: post-types/albums/shortcodes/elementor-albums-list.php:91
+#: post-types/events/shortcodes/elementor-events-list.php:90
+#: post-types/events/shortcodes/events-list.php:80
+msgid "Title"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:114
+msgid "Buy Link"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:120
+msgid "Free Download"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:125
+msgid "Video Link"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:130
+msgid "Lyrics"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:142
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:149
+msgid "Reviews"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:154
+msgid "Review Author"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:159
+msgid "Review Text"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:169
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:176
+msgid "Stores"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:182
+#: post-types/albums/helper-functions.php:81
+#: post-types/albums/shortcodes/albums-list.php:181
+#: post-types/albums/shortcodes/elementor-albums-list.php:61
+msgid "iTunes"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:183
+#: post-types/albums/helper-functions.php:66
+#: post-types/albums/shortcodes/albums-list.php:182
+#: post-types/albums/shortcodes/elementor-albums-list.php:62
+msgid "Google Play"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:184
+#: post-types/albums/helper-functions.php:69
+#: post-types/albums/shortcodes/albums-list.php:183
+#: post-types/albums/shortcodes/elementor-albums-list.php:63
+msgid "Bandcamp"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:185
+#: post-types/albums/helper-functions.php:72
+#: post-types/albums/shortcodes/albums-list.php:184
+#: post-types/albums/shortcodes/elementor-albums-list.php:64
+msgid "Spotify"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:186
+#: post-types/albums/helper-functions.php:75
+#: post-types/albums/shortcodes/albums-list.php:185
+#: post-types/albums/shortcodes/elementor-albums-list.php:65
+msgid "AmazonMP3"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:187
+#: post-types/albums/helper-functions.php:78
+#: post-types/albums/shortcodes/albums-list.php:186
+#: post-types/albums/shortcodes/elementor-albums-list.php:66
+msgid "Deezer"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:189
+msgid "Store"
+msgstr ""
+
+#: post-types/albums/admin/meta-boxes/albums-meta-boxes.php:194
+msgid "Store Link"
+msgstr ""
+
+#: post-types/albums/admin/options/albums-options-map.php:8
+#: post-types/albums/admin/options/albums-options-map.php:13
+#: post-types/albums/albums-register.php:71
+msgid "Albums"
+msgstr ""
+
+#: post-types/albums/admin/options/albums-options-map.php:50
+#: post-types/events/admin/options/events-options-map.php:21
+msgid "Show Comments"
+msgstr ""
+
+#: post-types/albums/admin/options/albums-options-map.php:51
+msgid "Enabling this option will show comments on your album."
+msgstr ""
+
+#: post-types/albums/admin/options/albums-options-map.php:59
+msgid "Show Navigation"
+msgstr ""
+
+#: post-types/albums/admin/options/albums-options-map.php:60
+msgid "Enabling this option will turn on album navigation functionality."
+msgstr ""
+
+#: post-types/albums/admin/options/albums-options-map.php:78
+msgid "Show Social Share for Album Items"
+msgstr ""
+
+#: post-types/albums/albums-register.php:72
+#: post-types/albums/shortcodes/album-player.php:60
+#: post-types/albums/shortcodes/album.php:41
+#: post-types/albums/shortcodes/album.php:49
+#: post-types/albums/shortcodes/elementor-album-player.php:47
+#: post-types/albums/shortcodes/elementor-album.php:9
+#: post-types/albums/shortcodes/elementor-album.php:33
+msgid "Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:73
+msgid "New Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:74
+msgid "Add New Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:75
+msgid "Edit Album"
+msgstr ""
+
+#: post-types/albums/albums-register.php:93
+#: post-types/albums/albums-register.php:103
+msgid "Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:94
+msgid "Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:95
+msgid "Search Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:96
+msgid "All Labels"
+msgstr ""
+
+#: post-types/albums/albums-register.php:97
+msgid "Parent Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:98
+msgid "Parent Label:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:99
+msgid "Edit Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:100
+msgid "Update Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:101
+msgid "Add New Label"
+msgstr ""
+
+#: post-types/albums/albums-register.php:102
+msgid "New Label Name"
+msgstr ""
+
+#: post-types/albums/albums-register.php:115
+#: post-types/albums/albums-register.php:117
+#: post-types/albums/albums-register.php:118
+#: post-types/albums/albums-register.php:125
+msgid "Genres"
+msgstr ""
+
+#: post-types/albums/albums-register.php:116
+msgid "Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:119
+msgid "Parent Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:120
+msgid "Parent Genres:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:121
+msgid "Edit Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:122
+msgid "Update Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:123
+msgid "Add New Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:124
+msgid "New Genre"
+msgstr ""
+
+#: post-types/albums/albums-register.php:137
+#: post-types/albums/albums-register.php:139
+#: post-types/albums/albums-register.php:140
+#: post-types/albums/albums-register.php:147
+msgid "Artists"
+msgstr ""
+
+#: post-types/albums/albums-register.php:138
+msgid "Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:141
+msgid "Parent Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:142
+msgid "Parent Artists:"
+msgstr ""
+
+#: post-types/albums/albums-register.php:143
+msgid "Edit Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:144
+msgid "Update Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:145
+msgid "Add New Artist"
+msgstr ""
+
+#: post-types/albums/albums-register.php:146
+msgid "New Artist Name"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:17
+msgid "Artist Order"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:27
+msgid "Artist Stage"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:37
+msgid "Artist Link"
+msgstr ""
+
+#: post-types/albums/artists-custom-fields.php:47
+msgid "Artist Image"
+msgstr ""
+
+#: post-types/albums/helper-functions.php:131
+msgid "No tracks Founded."
+msgstr ""
+
+#: post-types/albums/helper-functions.php:214
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:41
+#: post-types/albums/shortcodes/elementor-album-player.php:9
+msgid "Album Player"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:43
+#: post-types/albums/shortcodes/album.php:43
+#: post-types/albums/shortcodes/albums-list.php:43
+#: post-types/events/shortcodes/events-list.php:43
+msgid "by QODE MUSIC"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:49
+msgid "Type"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:52
+#: post-types/albums/shortcodes/elementor-album-player.php:36
+msgid "Standard"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:53
+#: post-types/albums/shortcodes/elementor-album-player.php:37
+msgid "Compact"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:54
+#: post-types/albums/shortcodes/elementor-album-player.php:38
+msgid "Simple"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:68
+#: post-types/albums/shortcodes/elementor-album-player.php:57
+msgid "Content In Grid"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:71
+#: post-types/albums/shortcodes/albums-list.php:152
+#: post-types/albums/shortcodes/albums-list.php:169
+#: post-types/events/shortcodes/events-list.php:118
+msgid "Yes"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:72
+#: post-types/albums/shortcodes/albums-list.php:151
+#: post-types/albums/shortcodes/albums-list.php:170
+#: post-types/events/shortcodes/events-list.php:117
+msgid "No"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:79
+#: post-types/albums/shortcodes/elementor-album-player.php:67
+msgid "Player Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:85
+#: post-types/albums/shortcodes/elementor-album-player.php:78
+msgid "Play Button Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:91
+#: post-types/albums/shortcodes/elementor-album-player.php:89
+msgid "Navigation Buttons Background Color"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:97
+#: post-types/albums/shortcodes/elementor-album-player.php:100
+msgid "Skin"
+msgstr ""
+
+#: post-types/albums/shortcodes/album-player.php:102
+#: post-types/albums/shortcodes/elementor-album-player.php:105
+msgid "Transparent"
+msgstr ""
+
+#: post-types/albums/shortcodes/album.php:68
+#: post-types/albums/shortcodes/elementor-album.php:57
+#: post-types/events/shortcodes/elementor-events-list.php:33
+#: post-types/events/shortcodes/events-list.php:49
+msgid "Title Tag"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:41
+#: post-types/albums/shortcodes/elementor-albums-list.php:9
+msgid "Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:49
+#: post-types/albums/shortcodes/elementor-album-player.php:33
+#: post-types/albums/shortcodes/elementor-albums-list.php:33
+msgid "Albums List Template"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:52
+#: post-types/albums/shortcodes/elementor-albums-list.php:36
+msgid "Standard With Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:54
+#: post-types/albums/shortcodes/elementor-albums-list.php:37
+msgid "Gallery With Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:55
+#: post-types/albums/shortcodes/elementor-albums-list.php:38
+msgid "Gallery No Space"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:62
+#: post-types/albums/shortcodes/elementor-albums-list.php:87
+#: post-types/events/shortcodes/elementor-events-list.php:85
+#: post-types/events/shortcodes/events-list.php:75
+msgid "Order By"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:65
+#: post-types/albums/shortcodes/elementor-albums-list.php:90
+#: post-types/events/shortcodes/elementor-events-list.php:91
+#: post-types/events/shortcodes/events-list.php:81
+msgid "Date"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:67
+#: post-types/albums/shortcodes/elementor-albums-list.php:92
+#: post-types/events/shortcodes/elementor-events-list.php:89
+#: post-types/events/shortcodes/events-list.php:79
+msgid "Menu Order"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:72
+#: post-types/albums/shortcodes/albums-list.php:85
+#: post-types/albums/shortcodes/albums-list.php:94
+#: post-types/albums/shortcodes/albums-list.php:103
+#: post-types/albums/shortcodes/albums-list.php:112
+#: post-types/albums/shortcodes/albums-list.php:121
+#: post-types/albums/shortcodes/albums-list.php:135
+#: post-types/albums/shortcodes/albums-list.php:144
+#: post-types/albums/shortcodes/albums-list.php:155
+#: post-types/albums/shortcodes/albums-list.php:161
+#: post-types/albums/shortcodes/elementor-albums-list.php:79
+#: post-types/events/shortcodes/elementor-events-list.php:68
+#: post-types/events/shortcodes/events-list.php:71
+#: post-types/events/shortcodes/events-list.php:86
+#: post-types/events/shortcodes/events-list.php:99
+#: post-types/events/shortcodes/events-list.php:110
+#: post-types/events/shortcodes/events-list.php:121
+#: post-types/events/shortcodes/events-list.php:127
+msgid "Query and Layout Options"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:76
+#: post-types/albums/shortcodes/elementor-albums-list.php:101
+#: post-types/events/shortcodes/elementor-events-list.php:100
+#: post-types/events/shortcodes/events-list.php:90
+msgid "Order"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:89
+#: post-types/albums/shortcodes/elementor-albums-list.php:114
+msgid "One-Label Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:93
+msgid "Enter one label slug (leave empty for showing all labels)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:98
+#: post-types/albums/shortcodes/elementor-albums-list.php:123
+msgid "One-Genre Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:102
+msgid "Enter one genre slug (leave empty for showing all genres)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:107
+#: post-types/albums/shortcodes/elementor-albums-list.php:132
+msgid "One-Artist Albums List"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:111
+msgid "Enter one artist slug (leave empty for showing all artists)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:116
+#: post-types/albums/shortcodes/elementor-albums-list.php:141
+msgid "Number of Albums Per Page"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:120
+#: post-types/albums/shortcodes/elementor-albums-list.php:142
+#: post-types/events/shortcodes/elementor-events-list.php:77
+#: post-types/events/shortcodes/events-list.php:70
+msgid "(enter -1 to show all)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:125
+#: post-types/albums/shortcodes/elementor-albums-list.php:150
+msgid "Number of Columns"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:129
+#: post-types/albums/shortcodes/elementor-albums-list.php:153
+msgid "Two"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:130
+#: post-types/albums/shortcodes/elementor-albums-list.php:154
+msgid "Three"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:131
+#: post-types/albums/shortcodes/elementor-albums-list.php:155
+msgid "Four"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:134
+msgid "Default value is Three"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:139
+#: post-types/albums/shortcodes/elementor-albums-list.php:164
+msgid "Show Only Albums with Listed IDs"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:143
+#: post-types/albums/shortcodes/elementor-albums-list.php:165
+msgid "Delimit ID numbers by comma (leave empty for all)"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:148
+#: post-types/albums/shortcodes/elementor-albums-list.php:173
+#: post-types/events/shortcodes/elementor-events-list.php:127
+#: post-types/events/shortcodes/events-list.php:114
+msgid "Show Load More"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:159
+#: post-types/albums/shortcodes/elementor-albums-list.php:183
+#: post-types/events/shortcodes/elementor-events-list.php:137
+#: post-types/events/shortcodes/events-list.php:125
+msgid "Load More label"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:166
+#: post-types/albums/shortcodes/elementor-albums-list.php:47
+msgid "Show Stores"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:178
+#: post-types/albums/shortcodes/elementor-albums-list.php:57
+msgid "Choose Stores To Be Shown"
+msgstr ""
+
+#: post-types/albums/shortcodes/albums-list.php:256
+#: post-types/albums/shortcodes/elementor-albums-list.php:234
+msgid "Sorry, no albums matched your criteria."
+msgstr ""
+
+#: post-types/albums/shortcodes/elementor-album-player.php:25
+#: post-types/albums/shortcodes/elementor-album.php:25
+#: post-types/albums/shortcodes/elementor-albums-list.php:25
+msgid "General"
+msgstr ""
+
+#: post-types/albums/shortcodes/elementor-albums-list.php:104
+#: post-types/events/shortcodes/elementor-events-list.php:103
+msgid "ASC"
+msgstr ""
+
+#: post-types/albums/shortcodes/elementor-albums-list.php:105
+#: post-types/events/shortcodes/elementor-events-list.php:104
+msgid "DESC"
+msgstr ""
+
+#: post-types/albums/shortcodes/elementor-albums-list.php:115
+msgid "Enter one label slug (leave empty for showing all labels"
+msgstr ""
+
+#: post-types/albums/shortcodes/elementor-albums-list.php:124
+msgid "Enter one genre slug (leave empty for showing all genres"
+msgstr ""
+
+#: post-types/albums/shortcodes/elementor-albums-list.php:133
+msgid "Enter one artist slug (leave empty for showing all artists"
+msgstr ""
+
+#: post-types/albums/shortcodes/templates/load-more-template.php:7
+msgid "Show more"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/about.php:1
+msgid "About Album"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/album-review.php:4
+msgid "Album Reviews"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/artist.php:15
+msgid "Artists:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/artist.php:17
+msgid "Artist:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/available-on.php:6
+msgid "Available On"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/date.php:7
+msgid "Release Date:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/follow_and_share.php:3
+msgid "Share"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/genre.php:14
+msgid "Genres:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/genre.php:16
+msgid "Genre:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/label.php:15
+msgid "Labels:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/label.php:17
+msgid "Label:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/latest-video.php:4
+msgid "Latest Video"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/lyrics.php:6
+msgid "Available Lyrics"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/people.php:7
+msgid "People:"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/playlist.php:1
+#: post-types/albums/templates/single/parts/tracks.php:6
+msgid "Tracklist"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/tracks.php:22
+msgid "buy track"
+msgstr ""
+
+#: post-types/albums/templates/single/parts/tracks.php:28
+msgid "download"
+msgstr ""
+
+#: post-types/events/admin/meta-boxes/events-meta-boxes.php:18
+msgid "Event Skin"
+msgstr ""
+
+#: post-types/events/admin/meta-boxes/events-meta-boxes.php:22
+msgid "Dark Skin"
+msgstr ""
+
+#: post-types/events/admin/meta-boxes/events-meta-boxes.php:23
+msgid "Light Skin"
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:8
+#: post-types/events/events-register.php:77
+msgid "Events"
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:13
+#: post-types/events/events-register.php:78
+msgid "Event"
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:22
+msgid "Enabling this option will show comments on your page."
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:30
+msgid "Show Pagination"
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:31
+msgid "Enabling this option will turn on events pagination functionality."
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:39
+msgid "Event Single Slug"
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:40
+msgid "Enter if you wish to use a different Single Project slug (Note: After entering slug, navigate to Settings -> Permalinks and click \"Save\" in order for changes to take effect)"
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:53
+msgid "Maps Style"
+msgstr ""
+
+#: post-types/events/admin/options/events-options-map.php:54
+msgid "Insert map style json"
+msgstr ""
+
+#: post-types/events/events-register.php:79
+msgid "New Event"
+msgstr ""
+
+#: post-types/events/events-register.php:80
+msgid "Add New Event"
+msgstr ""
+
+#: post-types/events/events-register.php:81
+msgid "Edit Event"
+msgstr ""
+
+#: post-types/events/events-register.php:99
+#: post-types/events/events-register.php:109
+msgid "Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:100
+msgid "Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:101
+msgid "Search Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:102
+msgid "All Event Types"
+msgstr ""
+
+#: post-types/events/events-register.php:103
+msgid "Parent Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:104
+msgid "Parent Event Type:"
+msgstr ""
+
+#: post-types/events/events-register.php:105
+msgid "Edit Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:106
+msgid "Update Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:107
+msgid "Add New Event Type"
+msgstr ""
+
+#: post-types/events/events-register.php:108
+msgid "New Event Type Name"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:9
+#: post-types/events/shortcodes/events-list.php:41
+msgid "Events List"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:25
+#: post-types/events/shortcodes/events-list.php:62
+#: post-types/events/shortcodes/events-list.php:135
+#: post-types/events/shortcodes/events-list.php:142
+msgid "Design Options"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:50
+#: post-types/events/shortcodes/events-list.php:132
+msgid "Date Text Color"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:58
+#: post-types/events/shortcodes/events-list.php:139
+msgid "Border Color"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:76
+#: post-types/events/shortcodes/events-list.php:66
+msgid "Number of Events Per Page"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:88
+#: post-types/events/shortcodes/events-list.php:78
+msgid "Start Date"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:113
+#: post-types/events/shortcodes/events-list.php:103
+msgid "Show Event by Status"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:116
+#: post-types/events/shortcodes/events-list.php:106
+msgid "All"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:117
+#: post-types/events/shortcodes/events-list.php:107
+msgid "Current and Upcoming"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:118
+#: post-types/events/shortcodes/events-list.php:108
+msgid "Past"
+msgstr ""
+
+#: post-types/events/shortcodes/elementor-events-list.php:184
+#: post-types/events/shortcodes/events-list.php:207
+msgid "Sorry, no events matched your criteria."
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:33
+#: post-types/events/templates/single/parts/buy_tickets.php:5
+msgid "buy tickets"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:41
+msgid "sold out!"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/events-list-template.php:48
+msgid "free!"
+msgstr ""
+
+#: post-types/events/shortcodes/templates/load-more-template.php:7
+msgid "Load More"
+msgstr ""
+
+#: post-types/events/templates/single/parts/about_tour.php:3
+msgid "About Tour"
+msgstr ""
+
+#: post-types/events/templates/single/parts/details.php:6
+msgid "Details"
+msgstr ""
+
+#: post-types/events/templates/single/parts/details.php:11
+msgid "Time:"
+msgstr ""
+
+#: post-types/events/templates/single/parts/details.php:19
+msgid "Location:"
+msgstr ""
+
+#: post-types/events/templates/single/parts/details.php:27
+msgid "Website:"
+msgstr ""
+
+#: post-types/events/templates/single/parts/details.php:36
+msgid "Event Type:"
+msgstr ""
+
+#: post-types/events/templates/single/parts/details.php:50
+msgid "Organized By:"
+msgstr ""
+
+#: post-types/events/templates/single/parts/follow_and_share.php:4
+msgid "Follow and Share"
+msgstr ""

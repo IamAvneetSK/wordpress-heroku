@@ -1,0 +1,53 @@
+.qodef-property-list-holder {
+    .qodef-property-list-filter-part {
+        .qodef-filter-type-holder {
+            .qodef-property-type-list-holder {
+                .qodef-ptl-item {
+                    border: none;
+                    margin: 0 0 0 1px;
+                    padding: 6px 22px;
+                    text-transform: capitalize;
+                    background-color: #f6f9fb;
+                    transition: all 0.3s ease;
+
+                    .qodef-ptl-item-image {
+                        transform: none;
+                        transition: none;
+                    }
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+
+                    &:hover,
+                    &.active {
+                        background-color: #e9f0f6;
+
+                        .qodef-ptl-item-image {
+                            transform: none;
+                        }
+                    }
+                }
+                .qodef-ptl-item-title {
+                    font-size: 12px;
+                    letter-spacing: 0;
+                    color: #000;
+                    font-family: 'Overpass', sans-serif;
+                    font-weight: 600;
+                    top: 0;
+                }
+
+                .qodef-taxonomy-icon {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+    &.qodef-pl-status-set {
+        .qodef-property-list-filter-part {
+            .qodef-section-type {
+                width: 100%;
+            }
+        }
+    }
+}

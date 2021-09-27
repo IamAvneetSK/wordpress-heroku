@@ -1,0 +1,72 @@
+/* IDX PLUGIN SEARCH FORM STYLE OVERRIDE - BEGIN */
+
+.dsidx-resp-search-box {
+    input[type=submit] {
+        @include qodeDefaultButton();
+        cursor: pointer;
+        &:hover{
+            @include qodeDefaultButtonHover();
+        }
+    }
+    input[type="text"] {
+        margin-bottom: 0;
+    }
+
+    .select2-container--default {
+        width: 100% !important;
+    }
+
+    .dsidx-resp-area {
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        display: block;
+    }
+
+    /* Vertical form */
+    &.dsidx-resp-vertical {
+
+    }
+
+    /* Horizontal form */
+    &.dsidx-resp-horizontal {
+        .dsidx-resp-area-half.dsidx-quick-resp-min-beds-area,
+        .dsidx-resp-area-half.dsidx-quick-resp-min-baths-area {
+            display: inline-block;
+        }
+
+        .dsidx-resp-search-form {
+            margin: 0 -5px;
+        }
+
+        .dsidx-resp-area {
+            padding: 0 5px;
+        }
+
+        .dsidx-resp-location-area {
+            width: 30%;
+        }
+        .dsidx-resp-type-area {
+            width: 30%;
+        }
+        .dsidx-quick-resp-min-beds-area {
+            width: 10%;
+        }
+        .dsidx-quick-resp-min-baths-area {
+            width: 10%;
+        }
+        .dsidx-resp-price-area-min {
+            width: 20% !important;
+        }
+        .dsidx-resp-price-area-max {
+            width: 30% !important;
+        }
+        .dsidx-resp-area-submit {
+            width: 30%;
+            text-align: left;
+        }
+    }
+}
+
+/* IDX PLUGIN SEARCH FORM STYLE OVERRIDE - END */

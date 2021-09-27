@@ -1,0 +1,23 @@
+/* Map section start */
+.qodef-property-map {
+    .qodef-property-map-address {
+        margin: 30px 0 0;
+        .qodef-map-item {
+            display: block;
+        }
+
+        .qodef-label-items-item {
+            .qodef-address-icon {
+                margin-right: 8px;
+            }
+            .qodef-label-items-label span {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &.qodef-property-label-items-holder {
+        padding: 35px 0 15px;
+    }
+}
+/* Map section end */

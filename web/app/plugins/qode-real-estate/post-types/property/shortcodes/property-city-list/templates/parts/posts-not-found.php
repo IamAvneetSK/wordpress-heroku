@@ -1,0 +1,1 @@
+<p class="qodef-pcl-not-found"><?php esc_html_e( 'Sorry, no property cities found.', 'qode-real-estate' ); ?></p>

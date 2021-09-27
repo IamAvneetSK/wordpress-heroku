@@ -1,0 +1,139 @@
+.qodef-agency-agent-list {
+    .qodef-aal-item {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .qodef-aal-item-inner {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .qodef-aal-user-link {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .qodef-aal-image {
+        overflow: hidden;
+        padding: 0;
+        box-sizing: border-box;
+
+        img {
+            vertical-align: middle;
+            width: auto;
+            max-width: 100%;
+            position: relative;
+        }
+    }
+
+    .qodef-aal-item-content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 66.66%;
+        background-color: #000;
+        text-align: left;
+        padding: 14px 27px 17px;
+        box-sizing: border-box;
+        @include qodeTransition(transform 0.225s ease-out);
+        z-index: 5;
+    }
+
+    .qodef-aal-item-title, .qodef-aal-item-position {
+        color: #fff;
+        margin: 0;
+    }
+
+    .qodef-aal-item-title {
+        margin: 0 0 8px;
+    }
+
+    .qodef-aal-item-desc {
+        margin: 2px 0 12px;
+    }
+
+    .qodef-aal-item-social {
+        position: relative;
+        z-index: 20;
+        margin-top: 13px;
+        .qodef-icon-shortcode {
+            padding: 0 8px;
+            &:first-child {
+                padding-left: 0;
+            }
+
+            a {
+                color: #fff;
+                font-size: 13px;
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+    
+    .qodef-aal-item {
+        &.qodef-user-has-social {
+            .qodef-aal-item-content {
+                @include qodeTransform(translateY(39px));
+            }
+            &:hover {
+                .qodef-aal-item-content {
+                    @include qodeTransform(translateY(0));
+                }
+            }
+        }
+    }
+
+    /***** List Columns Style - begin *****/
+
+    &:not(.qodef-aal-one-column) {
+
+        li {
+            float: left;
+        }
+    }
+
+    $gallery_columns_number: ('two', 'three', 'four', 'five', 'six');
+
+    @for $i from 0 to length($gallery_columns_number) {
+        &.qodef-aal-#{nth($gallery_columns_number,$i+1)}-columns {
+
+            li {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) {
+                // set different break point for five and six columns
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    li {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+                    li {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** List Columns Style - end *****/
+}

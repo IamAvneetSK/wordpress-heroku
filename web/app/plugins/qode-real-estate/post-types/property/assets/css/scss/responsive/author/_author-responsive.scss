@@ -1,0 +1,25 @@
+/* Author archive template for property roles responsive */
+.qodef-re-author-holder {
+    @include ipad-landscape {
+        .qodef-author-image {
+            width: 300px;
+        }
+    
+        .qodef-author-info {
+            width: calc(100% - 300px);
+        }
+    }
+
+    @include ipad-portrait {
+        .qodef-author-image {
+            float: none;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .qodef-author-info {
+            float: none;
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+}

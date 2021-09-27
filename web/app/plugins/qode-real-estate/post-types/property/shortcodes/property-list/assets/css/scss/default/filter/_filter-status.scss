@@ -1,0 +1,12 @@
+.qodef-property-list-holder {
+    &.qodef-pl-type-set {
+        .qodef-property-list-filter-part {
+            .qodef-section-status {
+                width: 100%;
+                .select2 {
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+}

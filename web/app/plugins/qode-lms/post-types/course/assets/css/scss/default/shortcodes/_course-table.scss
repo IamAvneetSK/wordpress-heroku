@@ -1,0 +1,126 @@
+.qode-course-table-holder {
+	thead {
+		background-color: #f6f9fa;
+		td {
+			font-size: 16px;
+			font-weight: 600;
+			color: #282727;
+			padding: 26px 33px;
+			text-align: left;
+			text-transform: uppercase;
+			vertical-align: middle;
+		}
+	}
+
+	tbody {
+		background-color: #ffffff;
+		.qode-ct-item {
+			td {
+				font-size: 16px;
+				font-weight: 700;
+				padding: 26px 33px;
+				text-align: left;
+				vertical-align: middle;
+				.qbutton {
+					font-size: 13px;
+					letter-spacing: .05em;
+					font-weight: 700;
+				}
+
+				&.qode-tc-button-field {
+					text-align: right;
+				}
+				&>a:not(.qbutton){
+					display: table;
+					&>span{
+						display: table-cell;
+						vertical-align: middle;
+					}
+					.qode-instructor-image{
+						padding-right: 15px;
+					}
+				}
+			}
+			.qode-tc-course-field {
+				.qode-ci-price-holder {
+					display: inline-block;
+					margin-left: 10px;
+					span {
+						color: #ffffff;
+						font-weight: 600;
+						text-transform: uppercase;
+						font-size: 12px;
+						-webkit-border-radius:12px;
+						-moz-border-radius:12px;
+						border-radius:12px;
+					}
+					.qode-ci-price-value {
+						padding: 2px 21px;
+					}
+					.qode-ci-price-free {
+						padding: 2px 18px;
+					}
+				}
+
+				.qode-cli-title-holder {
+					color: #808080;
+				}
+			}
+
+			.qode-tc-instructor-field {
+				a {
+					display: table;
+
+					&:hover {
+						.qode-instructor-name {
+						}
+					}
+				}
+				img {
+					display: table-cell;
+					width: 45px;
+					-webkit-border-radius:50%;
+					-moz-border-radius:50%;
+					border-radius:50%;
+				}
+				.qode-instructor-name {
+					display: table-cell;
+					vertical-align: middle;
+					color: #808080;
+					padding-left: 28px;
+					@include qodeTransition(color .2s ease-out);
+				}
+			}
+
+			.qode-tc-category-field {
+				.qode-cli-category-holder {
+					span {
+						display: none;
+					}
+					a {
+						color: #808080;
+
+						&:hover {
+							color: $first-main-color;
+						}
+					}
+				}
+			}
+
+			.qode-students-number-holder{
+				position: relative;
+				text-align: center;
+				.qode-student-number{
+					position: absolute;
+					top: -10px;
+				}
+			}
+
+			.qode-tc-button-field {
+				a.qode-btn {
+					padding: 13px 36px 14px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.qodef-property-single-holder {
+    .qodef-property-single-outer {
+        background: #fff;
+        margin-bottom: 100px;
+        padding: 0 20px 30px;
+        box-sizing: border-box;
+    }
+    .qodef-property-single-gallery-holder {
+        background-color: #fff;
+        padding-bottom: 14px;
+        box-sizing: border-box;
+    }
+    .qodef-property-label-items-holder {
+        @include qodeTableLayout();
+        padding: 35px 0;
+        border-bottom: 1px solid $default-border-color;
+    }
+    .qodef-property-label-style {
+        @include qodeTableCellLayout();
+        vertical-align: top;
+        text-align: left;
+        width: 20%;
+        * {
+            margin: 0;
+        }
+    }
+    .qodef-property-items-style {
+        @include qodeTableCellLayout();
+        vertical-align: top;
+        text-align: left;
+        width: 80%;
+    }
+
+    .qodef-label-items-item {
+        @include qodeTableLayout();
+        padding: 0 0 22px;
+    }
+    .qodef-label-items-label {
+        @include qodeTableCellLayout();
+        text-align: left;
+        vertical-align: top;
+        width: 50%;
+        @include qodeH6();
+        font-size: 14px;
+        text-transform: none;
+        line-height: 1;
+        color: #000;
+
+        .qodef-label-text {
+            vertical-align: middle;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+        .qodef-label-icon img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    }
+    .qodef-label-items-value {
+        @include qodeTableCellLayout();
+        text-align: left;
+        @include qodeH6();
+        vertical-align: top;
+        width: 50%;
+        font-weight: 400;
+        text-transform: none;
+        color: #585858;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15px;
+        line-height: 1.2;
+        font-style: normal;
+        letter-spacing: 0;
+    }
+
+    .qode-grid-col-6 {
+        @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+            &:nth-child(2n+1) {
+                clear: both;
+            }
+        }
+    }
+
+    .qodef-property-attachment a {
+        color: $first-main-color;
+
+    }
+}
+
+.single-property {
+    aside.qodef-sidebar {
+        margin: 40px 0 60px;
+    }
+}

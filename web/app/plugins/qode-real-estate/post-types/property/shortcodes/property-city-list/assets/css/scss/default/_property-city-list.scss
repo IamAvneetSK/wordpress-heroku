@@ -1,0 +1,84 @@
+.qodef-property-city-list-holder {
+    .qodef-pcl-item {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+    .qodef-pcl-item-inner {
+        position: relative;
+
+        &:hover {
+            .qodef-pcl-item-image img {
+                @include qodeTransform(scale(1.04));
+            }
+        }
+    }
+    .qodef-pcl-item-image {
+        line-height: 0;
+        overflow: hidden;
+
+        img {
+            @include qodeTransform(scale(1));
+            @include qodeTransition(transform 0.25s ease-out);
+            backface-visibility: hidden;
+        }
+    }
+
+    .qodef-pcl-item-title-country-count {
+        margin: 28px 0 0;
+    }
+
+    .qodef-pcl-item-content {
+
+    }
+
+    .qodef-pcl-item-link {
+        @include qodeAbsoluteHolderLayout();
+    }
+
+    /***** List Columns Style - begin *****/
+
+    &:not(.qodef-pcl-one-column) {
+
+        article {
+            float: left;
+        }
+    }
+
+    $gallery_columns_number: ('two', 'three', 'four', 'five', 'six');
+
+    @for $i from 0 to length($gallery_columns_number) {
+        &.qodef-pcl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+            article {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) {
+                // set different break point for five and six columns
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    article {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+                    article {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** List Columns Style - end *****/
+}

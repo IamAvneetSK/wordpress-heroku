@@ -1,0 +1,43 @@
+/* IHOME FINDER LISTING SEARCH STYLE OVERRIDE - BEGIN */
+#ihf-main-container {
+    /* Quick Search Form */
+    .ihf-quick-search-form {
+        label {
+            display: block !important;
+        }
+    }
+
+    /* Listing ID Search Form */
+    .listingIdSearchForm {
+        input[type=text] {
+            width: 98%;
+        }
+    }
+
+    /* Search Page */
+    #ihf-refine-search-button {
+        margin-right: 20px;
+    }
+    .ihf-refine-search-container {
+        width: 300px;
+    }
+    .ihf-listing-search-results {
+        .col-xs-12.col-sm-8 {
+            width: 100%;
+            .btn-group {
+                border: 0;
+                a {
+                    width: auto;
+                    min-width: 100px;
+                    margin-right: 10px;
+                    @include phone-portrait {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* IHOME FINDER LISTING SEARCH STYLE OVERRIDE - END */

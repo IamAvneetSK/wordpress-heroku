@@ -1,0 +1,19 @@
+/* IHOME FINDER LISTING LISTS RESPONSIVE STYLE OVERRIDE - BEGIN */
+#ihf-main-container {
+    /* ROW LIST */
+    .ihf-result.row {
+        @include phone-landscape {
+            .ihf-results-photo {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+            .ihf-results-property-info {
+                width: 100%;
+                padding-left: 0;
+                padding-top: 10px;
+                border-top: 1px solid $default-border-color;
+            }
+        }
+    }
+}
+/* IHOME FINDER LISTING LISTS RESPONSIVE STYLE OVERRIDE - END */

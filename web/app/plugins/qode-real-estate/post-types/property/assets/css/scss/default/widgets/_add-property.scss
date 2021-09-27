@@ -1,0 +1,36 @@
+.widget {
+    &.qodef-add-property-widget {
+        aside.qodef-sidebar &,
+        .wpb_widgetised_column & {
+            border: 0;
+            padding: 0;
+        }
+        .qodef-top-bar & {
+            display: inline-block;
+        }
+        .qodef-btn {
+            text-transform: none;
+            padding: 7px 12px;
+            background-color: #1a1a1a;
+
+            > span {
+
+                .qodef-dark-header .qodef-page-header>div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area & {
+                    color: #fff!important;
+                }
+
+                &:not(.qodef-btn-text) {
+                    font-size: 17px;
+                    vertical-align: middle;
+                    margin: -2px -5px 0 -5px;
+                }
+            }
+            
+            &:hover {
+                background-color: #fff !important;
+                border-color: #fff !important;;
+                color: #1b1b1b !important;;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+/* Simple item layout start */
+.qodef-property-list-holder {
+    &.qodef-pl-layout-simple {
+        .qodef-pl-item {
+            margin: 0 0 30px;
+
+            .qodef-item-content-wrapper {
+                @include qodeTableLayout();
+            }
+            .qodef-item-image-section {
+                @include qodeTableCellLayout();
+                width: 58px;
+                vertical-align: top;
+            }
+
+            .qodef-item-content {
+                @include qodeTableCellLayout();
+                width: calc(100% - 58px);
+                padding-left: 15px;
+                line-height: 0;
+                text-align: left;
+
+                .qodef-pli-title {
+                    margin: 0 0 3px 0;
+                    font-size: 13px;
+                    line-height: 15px;
+                    font-weight: 600;
+
+                    a{
+                        font-size: inherit;
+                        line-height: inherit;
+                        font-weight: inherit;
+                    }
+                }
+            }
+
+            .qodef-property-price {
+                font-weight: 400;
+                color: #000;
+                font-size: 13px;
+                line-height: 15px;
+                display: block;
+                margin-bottom: 10px;
+                font-family: 'Overpass', sans-serif;
+            }
+
+            .qodef-property-list-simple-features{
+                white-space: nowrap;
+
+                .qodef-simple-feature-item{
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 14px;
+                    color: #585858;
+
+                    &:not(:last-child){
+                        &:after{
+                            content: '';
+                            position: relative;
+                            display: inline-block;
+                            width: 4px;
+                            height: 4px;
+                            background-color: currentColor;
+                            border-radius: 50%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            .qodef-item-info,
+            .qodef-property-types {
+                color: #bebebe;
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+    }
+}
+
+/* Simple item layout end */

@@ -1,0 +1,11 @@
+@include ipad-landscape{
+  .qode-tribe-events-single{
+    .qode-events-single-main-content{
+      .tribe-events-venue-map{
+        &>div{
+          padding-bottom: 61%;
+        }
+      }
+    }
+  }
+}

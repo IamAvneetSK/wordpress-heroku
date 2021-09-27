@@ -1,0 +1,1 @@
+<p class="qodef-ptl-not-found"><?php esc_html_e( 'Sorry, no property types found.', 'qode-real-estate' ); ?></p>

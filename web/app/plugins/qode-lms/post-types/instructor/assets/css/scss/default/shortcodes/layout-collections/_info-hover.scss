@@ -1,0 +1,125 @@
+/* ==========================================================================
+# Instructor info hover - begin
+	========================================================================== */
+
+.qode-instructor {
+    &.info-hover {
+
+        .qode-instructor-inner {
+            position: relative;
+
+            &:hover {
+
+                .qode-instructor-info {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .qode-instructor-image img {
+            display: block;
+        }
+
+        .qode-instructor-image {
+            &:hover{
+                .qode-instructor-info-tb {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .qode-instructor-name,
+        .qode-instructor-position,
+        .qode-instructor-text,
+        .qode-icon-shortcode,
+        .qode-icon-shortcode > * {
+            color: #000;
+        }
+
+        .qode-instructor-info-tb {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: left;
+            opacity: 0;
+            background: rgba(#fff, 0.85);
+            @include qodeTransition(opacity 0.2s ease-out);
+
+        }
+
+        .qode-instructor-info-tc {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        .qode-instructor-name {
+            margin: 0;
+        }
+
+        .qode-instructor-position {
+            margin: 13px 0 0;
+        }
+
+        .qode-instructor-social-holder-between {
+            margin: 20px 0 0;
+        }
+
+        .qode-icon-shortcode {
+            margin: 0 8px;
+            font-size: 20px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .qode-instructor-overlay-link {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .qode-instructor-social-holder-between {
+            margin: 15px 0 0;
+            
+            .qode_icon_shortcode {
+                
+                a{
+                    display: block;
+                    height: 36px;
+                    width: 36px;
+                    text-align: center;
+                    line-height: 36px;
+                    font-size: 14px;
+                    @include qodeBorderRadius(50%);
+                    background-color: #fff;
+                    margin-right: 6px;
+                    border: 1px solid #fff;
+                    @include qodeTransition(all 0.3s ease);
+                    @include qodeBoxShadow(3px 4px 8px 0px rgba($first-main-color, 0.1));
+                    &:hover{
+                        background-color: $first-main-color;
+                        color: #fff;
+                        
+                        span{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Instructor info bellow - end
+	========================================================================== */

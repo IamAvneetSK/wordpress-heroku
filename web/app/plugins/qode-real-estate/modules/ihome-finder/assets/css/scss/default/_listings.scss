@@ -1,0 +1,145 @@
+/* IHOME FINDER LISTING LISTS STYLE OVERRIDE - BEGIN */
+#ihf-main-container {
+    .well {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+    /* GRID LIST */
+    .title-bar-1 {
+        display: inline-block;
+        text-shadow: none;
+        border: 0;
+        margin: 0 0 10px 0;
+        background: $first-main-color;
+        border-radius: 0;
+    }
+    a {
+        color: $default-heading-color;
+        display: inline-block;
+        &:hover {
+            color: $first-main-color;
+            text-decoration: none;
+        }
+    }
+    .ihf-grid-result-address {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .ihf-grid-result {
+        .ihf-map-icon {
+            border-radius: 0;
+            border: 0;
+            background: $first-main-color;
+            line-height: 25px;
+            width: 25px;
+            height: 25px;
+            font-size: 13px;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .ihf-results-grid-photo {
+        margin-bottom: 10px;
+    }
+    .ihf-grid-result-photocount {
+        .glyphicon {
+            &:before {
+                margin-right: 3px;
+                font-family: simple-line-icons;
+                content: "\e07f";
+            }
+        }
+    }
+    .ihf-grid-result-additional-info{
+        display: none;
+    }
+    .ihf-grid-result-mlsnum-proptype {
+        text-align: right;
+    }
+    /* ROW LIST */
+    .ihf-result.row {
+        .property-divider {
+            margin: 15px 0;
+        }
+        .ihf-results-address {
+            margin-bottom: 15px;
+        }
+        .ihf-map-icon {
+            border-radius: 0;
+            border: 0;
+            background: $first-main-color;
+            line-height: 25px;
+            width: 25px;
+            height: 25px;
+            font-size: 13px;
+            &:after {
+                display: none;
+            }
+        }
+        .ihf-results-photo {
+            margin: 0;
+        }
+        .ihf-results-property-info {
+            margin: 0;
+            width: calc(100% - 240px);
+            box-sizing: border-box;
+            padding-left: 20px;
+        }
+        .ihf-results-price {
+            margin-bottom: 10px;
+            background: #25abd1;
+            color: #fff;
+            display: inline-block;
+            padding: 10px;
+            float: right;
+        }
+        .ihf-results-extra-info {
+            margin-top: 0;
+        }
+    }
+
+    /* MARKET REPORT */
+    .ihf-market-report {
+        .btn-group {
+            border: 0;
+        }
+        #ihf-market-report-header {
+            button {
+                width: auto;
+            }
+            .ihf-market-report-header-text {
+                color: $default-text-color;
+                width: 100%;
+            }
+            .ihf-market-report-header-toggle {
+                width: 100%;
+            }
+            @include ipad-portrait {
+                .ihf-market-report-nav-column {
+                    width: 33.333%
+                }
+            }
+            @include phone-landscape {
+                .ihf-market-report-nav-column {
+                    width: 100%
+                }
+            }
+        }
+        #ihf-market-report-nav-container {
+            a.ihf-market-report-nav {
+                border-color: $default-border-color;
+            }
+        }
+        .ihf-market-report-link {
+            text-decoration: none;
+        }
+        .ihf-stat-block,
+        .ihf-chart-title {
+            border-color: $default-border-color;
+        }
+    }
+}
+/* IHOME FINDER LISTING LISTS STYLE OVERRIDE - END */

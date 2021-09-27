@@ -1,0 +1,18 @@
+/* Specification section start */
+.qodef-property-specification {
+    .qodef-additional-spec {
+        padding-top: 30px;
+        margin-top: 11px;
+        border-top: 1px solid $default-border-color;
+        box-sizing: border-box;
+    }
+
+    &.qodef-property-label-items-holder {
+        padding: 0 0 15px;
+    }
+
+    .qodef-property-spec-title{
+        font-size: 18px;
+    }
+}
+/* Specification section end */

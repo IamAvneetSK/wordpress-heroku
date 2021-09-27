@@ -1,0 +1,96 @@
+/* Title section start */
+.qodef-property-intro-info-holder{
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0 0 71px;
+}
+
+.qodef-property-title-section {
+    box-sizing: border-box;
+    padding: 56px 0 81px;
+    background-color: #fff;
+    .qodef-property-title-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .qodef-property-title-left {
+        .qodef-property-title-left-inner{
+            display: flex;
+            align-items: center;
+
+            .qodef-title-title{
+                font-size: 36px;
+                line-height: 1;
+            }
+        }
+    }
+    
+    .qodef-property-stars {
+        color: $first-main-color;
+    }
+    
+    .qodef-title-inline-part {
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        padding: 0 15px;
+        @include qodeH6();
+        line-height: 1;
+        border-right: 1px solid $default-border-color;
+        color: #585858;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: none;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+        .qodef-stars {
+            color: $first-main-color;
+        }
+        .qodef-views-icon {
+            color: $default-heading-color;
+        }
+    }
+
+    .qodef-property-info-holder{
+        margin: 3px 0 0;
+    }
+    
+    .qodef-property-statuses {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        box-sizing: border-box;
+
+        .qodef-property-status{
+            padding: 0 10px 0;
+            background-color: $first-main-color;
+            line-height: 20px;
+            display: inline-block;
+            margin: 0 15px 0 19px;
+        }
+    }
+    
+    .qodef-title-id {
+        font-size: 13px;
+        font-weight: 600;
+        font-family: 'Overpass', sans-serif;
+    }
+    
+    .qodef-property-id-label {
+        color: #585858;
+    }
+
+    .qodef-property-id-value {
+        color: #000;
+    }
+
+    .qodef-property-social-share{
+
+    }
+}
+/* Title section end */

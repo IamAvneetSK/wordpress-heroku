@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Course shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape {
+
+    .qode-course-list-holder {
+
+        &.qode-cl-gallery {
+
+            $gallery_columns_number: ('four', 'five');
+
+            @for $i from 0 to length($gallery_columns_number) {
+                &.qode-cl-#{nth($gallery_columns_number,$i+1)}-columns {
+                    $gallery_item_size: 100% / 3;
+
+                    article {
+                        width: $gallery_item_size;
+                    }
+
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(3n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.qode-cl-standard{
+            &.qode-cl-simple{
+                article{
+                    .qode-cli-text-holder{
+                        .qode-cli-top-info{
+                            padding-top: 15px;
+                        }
+
+                        .qode-cli-excerpt{
+                            margin-top: 8px;
+                            margin-bottom: 18px;
+                        }
+
+                        .qode-cli-bottom-info{
+                            padding: 2px 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+
+    .qode-course-list-holder {
+
+        &.qode-cl-gallery {
+
+            $gallery_columns_number: ('three', 'four', 'five');
+
+            @for $i from 0 to length($gallery_columns_number) {
+                &.qode-cl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                    article {
+                        width: 50%;
+                    }
+
+                    @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(2n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.qode-cl-standard{
+            &.qode-cl-simple{
+                article{
+                    .qode-cl-item-inner{
+                        display: block;
+                        .qode-cli-image{
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                        }
+                        .qode-cli-text-holder{
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .qode-course-list-holder {
+
+        &.qode-cl-gallery {
+
+            article {
+                width: 100% !important; // !important is set to override all other stronger selectors
+            }
+        }
+    }
+}
+
+@include phone-portrait{
+    .qode-cl-filter-holder{
+        display: block;
+        .qode-course-layout-filter{
+            display: block;
+            float: left;
+        }
+        .qode-course-items-counter{
+            display: block;
+            width: auto;
+        }
+        .qode-course-items-order{
+            clear: both;
+            text-align: left;
+            margin-top: 15px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Course shortcode responsive style - end
+   ========================================================================== */

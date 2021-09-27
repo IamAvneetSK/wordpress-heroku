@@ -1,0 +1,25 @@
+/* IDX PLUGIN SEARCH PAGE RESPONSIVE STYLE OVERRIDE - BEGIN */
+
+#dsidx {
+    #dsidx-listings {
+        li.dsidx-listing-container {
+            @include phone-landscape {
+                .dsidx-media {
+                    width: 100%;
+                    margin-bottom: 20px !important;
+                    float: none;
+                    padding: 0 !important;
+                    .dsidx-photo {
+                        text-align: left;
+                    }
+                }
+                .dsidx-data {
+                    width: 100%;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+/* IDX PLUGIN SEARCH PAGE RESPONSIVE STYLE OVERRIDE - END */

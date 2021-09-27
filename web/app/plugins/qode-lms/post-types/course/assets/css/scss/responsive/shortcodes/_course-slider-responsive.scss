@@ -1,0 +1,14 @@
+@include laptop-landscape-large {
+  .qode-course-slider-holder{
+      .qode-course-list-holder{
+          .owl-nav{
+              .owl-prev{
+                left: -60px;
+              }
+              .owl-next{
+                right: -60px;
+              }
+          }
+      }
+  }
+}

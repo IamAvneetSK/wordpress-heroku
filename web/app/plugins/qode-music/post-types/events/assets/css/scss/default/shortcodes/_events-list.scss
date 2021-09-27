@@ -1,0 +1,91 @@
+.qode-events-list-holder-outer{
+	margin: 0;
+	position: relative;
+
+	.qode-event-content{
+		display: table;
+		width: 100%;
+		border-bottom: 1px solid;
+		padding: 20px 0;
+		border-color: transparent;
+
+		.qode-event-buy-tickets-holder,
+		.qode-event-date-holder,
+		.qode-event-title-holder{
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.qode-event-date-holder{
+			width: 11%;
+			border-color: inherit;		    
+
+    		.qode-event-date-holder-left,
+    		.qode-event-date-holder-right{
+    			display: inline-block;
+    		}
+
+    		.qode-event-date-holder-left{
+    			width: 48%;
+
+    			.qode-event-day-number-holder{
+    				font-size: 55px;
+    				color: #000;
+    				letter-spacing: -1px;
+    				font-weight: 600;
+    				line-height: 1em;
+    				font-family: 'Oswald', sans-serif;
+    			}
+    		}
+
+    		.qode-event-date-holder-right{
+    			font-size: 15px;
+    			line-height: 20px;
+    			font-weight: 400;
+    			text-align: center;
+    			text-transform: uppercase;
+    			letter-spacing: 2.25px;
+    			border-right: 2px solid;
+    			border-color: inherit;
+    			padding-right: 28px;
+    			vertical-align: super;
+    			font-family: Oswald,sans-serif;
+    			letter-spacing: 0;
+
+    			.qode-event-day-holder,
+    			.qode-event-month-holder{
+    				display: block;
+    			}
+    		}    		    
+		}
+
+		.qode-event-title-holder{
+			width: 73%;
+			padding-left: 10px;
+		}
+
+		.qode-event-buy-tickets-holder{
+			width: 15%;
+			text-align: right;
+			text-transform: uppercase;
+			letter-spacing: 0;
+			font-weight: 600;
+			font-family: 'Oswald', sans-serif;
+			
+			a,
+			span{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.qode-events-list-paging{
+		text-align: center;
+
+		.qode-events-list-load-more{
+			.qbutton{
+				margin-top: 77px;
+			}
+		}
+	}
+}

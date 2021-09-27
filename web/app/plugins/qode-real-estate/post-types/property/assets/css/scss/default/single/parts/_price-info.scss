@@ -1,0 +1,44 @@
+/* Basic info section start */
+.qodef-property-price-info-holder {
+	.qodef-property-price {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 36px;
+		font-weight: 400;
+		color: #000;
+	}
+	.qodef-property-cta {
+		display: inline-block;
+		padding-left: 40px;
+		box-sizing: border-box;
+		vertical-align: middle;
+		@include laptop-landscape-large {
+			padding-left: 20px;
+		}
+	}
+	.qodef-re-add-to-compare {
+		font-size: 11px;
+		line-height: 2em;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		font-weight: 400;
+		color: #000;
+		span {
+			position: relative;
+			display: inline-block;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 3px;
+				width: 100%;
+				height: 1px;
+				background-color: #000;
+				-webkit-transition: width .2s ease;
+				-moz-transition: width .2s ease;
+				transition: width .2s ease;
+			}
+		}
+	}
+}
+/* Basic info section end */

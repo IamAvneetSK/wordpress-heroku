@@ -1,0 +1,1399 @@
+# Copyright (C) 2020 Qode Themes
+# This file is distributed under the same license as the Qode News plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Qode News 3.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/qode-news\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-09-18T12:43:52+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: qode-news\n"
+
+#. Plugin Name of the plugin
+#: main.php:105
+msgid "Qode News"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds news shortcodes and functionalities"
+msgstr ""
+
+#. Author of the plugin
+msgid "Qode Themes"
+msgstr ""
+
+#: lib/news-abstract.php:94
+msgid "by QODE NEWS"
+msgstr ""
+
+#: lib/news-abstract.php:215
+#: modules/blog/single/news-template/parts/no-posts.php:1
+#: modules/shortcodes/templates/parts/no-posts.php:1
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: lib/news-abstract.php:469
+#: lib/news-abstract.php:497
+#: lib/shortcode-params-functions.php:85
+#: lib/shortcode-params-functions.php:226
+#: modules/shortcodes/layout1/elementor-layout1.php:155
+#: modules/shortcodes/layout1/elementor-layout1.php:287
+#: modules/shortcodes/layout2/elementor-layout2.php:155
+#: modules/shortcodes/layout2/elementor-layout2.php:287
+#: modules/shortcodes/layout3/elementor-layout3.php:155
+#: modules/shortcodes/layout3/elementor-layout3.php:287
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:155
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:125
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:155
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:287
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:155
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:287
+msgid "Category"
+msgstr ""
+
+#: lib/news-abstract.php:532
+#: lib/news-abstract.php:560
+#: lib/shortcode-params-functions.php:111
+#: lib/shortcode-params-functions.php:227
+#: modules/shortcodes/layout1/elementor-layout1.php:179
+#: modules/shortcodes/layout1/elementor-layout1.php:288
+#: modules/shortcodes/layout2/elementor-layout2.php:179
+#: modules/shortcodes/layout2/elementor-layout2.php:288
+#: modules/shortcodes/layout3/elementor-layout3.php:179
+#: modules/shortcodes/layout3/elementor-layout3.php:288
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:179
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:149
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:179
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:288
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:179
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:288
+msgid "Tag"
+msgstr ""
+
+#: lib/news-abstract.php:595
+#: lib/news-abstract.php:623
+#: lib/shortcode-params-functions.php:172
+#: modules/shortcodes/layout1/elementor-layout1.php:238
+#: modules/shortcodes/layout2/elementor-layout2.php:238
+#: modules/shortcodes/layout3/elementor-layout3.php:238
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:238
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:208
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:238
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:238
+msgid "Reaction"
+msgstr ""
+
+#: lib/news-abstract.php:657
+#: lib/news-abstract.php:685
+#: lib/shortcode-params-functions.php:98
+#: modules/shortcodes/layout1/elementor-layout1.php:167
+#: modules/shortcodes/layout2/elementor-layout2.php:167
+#: modules/shortcodes/layout3/elementor-layout3.php:167
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:167
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:137
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:167
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:167
+msgid "Author"
+msgstr ""
+
+#: lib/news-abstract.php:720
+msgid "Id"
+msgstr ""
+
+#: lib/news-abstract.php:720
+#: lib/shortcode-params-functions.php:159
+#: modules/shortcodes/layout1/elementor-layout1.php:224
+#: modules/shortcodes/layout2/elementor-layout2.php:224
+#: modules/shortcodes/layout3/elementor-layout3.php:224
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:224
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:194
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:224
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:224
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:22
+msgid "Title"
+msgstr ""
+
+#: lib/news-abstract.php:838
+#: lib/news-abstract.php:859
+msgid "All"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:25
+#: modules/shortcodes/layout1/elementor-layout1.php:108
+#: modules/shortcodes/layout2/elementor-layout2.php:108
+#: modules/shortcodes/layout3/elementor-layout3.php:108
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:108
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:108
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:108
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:108
+msgid "Extra Class Name"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:27
+#: lib/shortcode-params-functions.php:36
+#: lib/shortcode-params-functions.php:52
+#: lib/shortcode-params-functions.php:66
+#: lib/shortcode-params-functions.php:80
+#: lib/shortcode-params-functions.php:93
+#: lib/shortcode-params-functions.php:106
+#: lib/shortcode-params-functions.php:119
+#: lib/shortcode-params-functions.php:132
+#: lib/shortcode-params-functions.php:145
+#: lib/shortcode-params-functions.php:167
+#: lib/shortcode-params-functions.php:186
+#: lib/shortcode-params-functions.php:201
+#: lib/shortcode-params-functions.php:209
+#: lib/shortcode-params-functions.php:217
+#: lib/shortcode-params-functions.php:231
+#: lib/shortcode-params-functions.php:238
+#: lib/shortcode-params-functions.php:246
+#: modules/shortcodes/layout1/elementor-layout1.php:100
+#: modules/shortcodes/layout2/elementor-layout2.php:100
+#: modules/shortcodes/layout3/elementor-layout3.php:100
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:100
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:100
+#: modules/shortcodes/post-slider1/post-slider1.php:184
+#: modules/shortcodes/post-slider1/post-slider1.php:195
+#: modules/shortcodes/post-slider1/post-slider1.php:202
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:100
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:100
+msgid "General"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:32
+#: modules/shortcodes/layout1/elementor-layout1.php:116
+#: modules/shortcodes/layout2/elementor-layout2.php:116
+#: modules/shortcodes/layout3/elementor-layout3.php:116
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:116
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:116
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:116
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:116
+msgid "Number of Posts"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:41
+#: modules/shortcodes/layout1/elementor-layout1.php:125
+#: modules/shortcodes/layout2/elementor-layout2.php:125
+#: modules/shortcodes/layout3/elementor-layout3.php:125
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:125
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:125
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:125
+msgid "Number of Columns"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:45
+#: modules/shortcodes/layout1/elementor-layout1.php:128
+#: modules/shortcodes/layout2/elementor-layout2.php:128
+#: modules/shortcodes/layout3/elementor-layout3.php:128
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:128
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:128
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:128
+msgid "One"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:46
+#: modules/shortcodes/layout1/elementor-layout1.php:129
+#: modules/shortcodes/layout2/elementor-layout2.php:129
+#: modules/shortcodes/layout3/elementor-layout3.php:129
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:129
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:129
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:129
+msgid "Two"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:47
+#: modules/shortcodes/layout1/elementor-layout1.php:130
+#: modules/shortcodes/layout2/elementor-layout2.php:130
+#: modules/shortcodes/layout3/elementor-layout3.php:130
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:130
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:130
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:130
+msgid "Three"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:48
+#: modules/shortcodes/layout1/elementor-layout1.php:131
+#: modules/shortcodes/layout2/elementor-layout2.php:131
+#: modules/shortcodes/layout3/elementor-layout3.php:131
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:131
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:131
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:131
+msgid "Four"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:57
+msgid "Block Proportion"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:71
+#: modules/shortcodes/layout1/elementor-layout1.php:140
+#: modules/shortcodes/layout2/elementor-layout2.php:140
+#: modules/shortcodes/layout3/elementor-layout3.php:140
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:140
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:140
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:140
+msgid "Space Between Items"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:74
+#: lib/shortcode-params-functions.php:299
+#: lib/shortcode-params-functions.php:457
+#: modules/shortcodes/layout1/elementor-layout1.php:143
+#: modules/shortcodes/layout1/elementor-layout1.php:343
+#: modules/shortcodes/layout2/elementor-layout2.php:143
+#: modules/shortcodes/layout2/elementor-layout2.php:343
+#: modules/shortcodes/layout3/elementor-layout3.php:143
+#: modules/shortcodes/layout3/elementor-layout3.php:343
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:143
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:317
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:303
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:143
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:143
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:343
+msgid "Medium"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:75
+#: modules/shortcodes/layout1/elementor-layout1.php:144
+#: modules/shortcodes/layout2/elementor-layout2.php:144
+#: modules/shortcodes/layout3/elementor-layout3.php:144
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:144
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:144
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:144
+msgid "Small"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:76
+#: modules/shortcodes/layout1/elementor-layout1.php:145
+#: modules/shortcodes/layout2/elementor-layout2.php:145
+#: modules/shortcodes/layout3/elementor-layout3.php:145
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:145
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:145
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:145
+msgid "Tiny"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:77
+#: modules/shortcodes/layout1/elementor-layout1.php:146
+#: modules/shortcodes/layout2/elementor-layout2.php:146
+#: modules/shortcodes/layout3/elementor-layout3.php:146
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:146
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:146
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:146
+msgid "None"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:92
+#: modules/shortcodes/layout1/elementor-layout1.php:156
+#: modules/shortcodes/layout2/elementor-layout2.php:156
+#: modules/shortcodes/layout3/elementor-layout3.php:156
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:156
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:126
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:156
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:156
+msgid "Enter the categories of the posts you want to display (leave empty for showing all categories)"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:105
+#: modules/shortcodes/layout1/elementor-layout1.php:168
+#: modules/shortcodes/layout2/elementor-layout2.php:168
+#: modules/shortcodes/layout3/elementor-layout3.php:168
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:168
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:138
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:168
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:168
+msgid "Enter the authors of the posts you want to display (leave empty for showing all authors)"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:118
+#: modules/shortcodes/layout1/elementor-layout1.php:180
+#: modules/shortcodes/layout2/elementor-layout2.php:180
+#: modules/shortcodes/layout3/elementor-layout3.php:180
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:180
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:150
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:180
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:180
+msgid "Enter the tags of the posts you want to display (leave empty for showing all tags)"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:124
+#: modules/shortcodes/layout1/elementor-layout1.php:191
+#: modules/shortcodes/layout2/elementor-layout2.php:191
+#: modules/shortcodes/layout3/elementor-layout3.php:191
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:191
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:161
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:191
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:191
+msgid "Include Posts"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:131
+#: modules/shortcodes/layout1/elementor-layout1.php:192
+#: modules/shortcodes/layout2/elementor-layout2.php:192
+#: modules/shortcodes/layout3/elementor-layout3.php:192
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:192
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:162
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:192
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:192
+msgid "Enter the IDs or Titles of the posts you want to display"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:137
+#: modules/shortcodes/layout1/elementor-layout1.php:203
+#: modules/shortcodes/layout2/elementor-layout2.php:203
+#: modules/shortcodes/layout3/elementor-layout3.php:203
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:203
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:173
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:203
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:203
+msgid "Exclude Posts"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:144
+#: modules/shortcodes/layout1/elementor-layout1.php:204
+#: modules/shortcodes/layout2/elementor-layout2.php:204
+#: modules/shortcodes/layout3/elementor-layout3.php:204
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:204
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:174
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:204
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:204
+msgid "Enter the IDs or Titles of the posts you want to exclude"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:150
+#: modules/shortcodes/layout1/elementor-layout1.php:215
+#: modules/shortcodes/layout2/elementor-layout2.php:215
+#: modules/shortcodes/layout3/elementor-layout3.php:215
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:215
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:185
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:215
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:215
+msgid "Sort"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:154
+#: modules/shortcodes/layout1/elementor-layout1.php:219
+#: modules/shortcodes/layout2/elementor-layout2.php:219
+#: modules/shortcodes/layout3/elementor-layout3.php:219
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:219
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:189
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:219
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:219
+msgid "Latest"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:155
+#: modules/shortcodes/layout1/elementor-layout1.php:220
+#: modules/shortcodes/layout2/elementor-layout2.php:220
+#: modules/shortcodes/layout3/elementor-layout3.php:220
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:220
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:190
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:220
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:220
+msgid "Random"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:156
+#: modules/shortcodes/layout1/elementor-layout1.php:221
+#: modules/shortcodes/layout2/elementor-layout2.php:221
+#: modules/shortcodes/layout3/elementor-layout3.php:221
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:221
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:191
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:221
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:221
+msgid "Random Posts Today"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:157
+#: modules/shortcodes/layout1/elementor-layout1.php:222
+#: modules/shortcodes/layout2/elementor-layout2.php:222
+#: modules/shortcodes/layout3/elementor-layout3.php:222
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:222
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:192
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:222
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:222
+msgid "Random in Last 7 Days"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:158
+#: modules/shortcodes/layout1/elementor-layout1.php:223
+#: modules/shortcodes/layout2/elementor-layout2.php:223
+#: modules/shortcodes/layout3/elementor-layout3.php:223
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:223
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:193
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:223
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:223
+msgid "Most Commented"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:160
+#: modules/shortcodes/layout1/elementor-layout1.php:225
+#: modules/shortcodes/layout2/elementor-layout2.php:225
+#: modules/shortcodes/layout3/elementor-layout3.php:225
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:225
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:195
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:225
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:225
+msgid "Popular"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:161
+#: modules/shortcodes/layout1/elementor-layout1.php:226
+#: modules/shortcodes/layout2/elementor-layout2.php:226
+#: modules/shortcodes/layout3/elementor-layout3.php:226
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:226
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:196
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:226
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:226
+msgid "Featured Posts First"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:162
+#: modules/shortcodes/layout1/elementor-layout1.php:227
+#: modules/shortcodes/layout2/elementor-layout2.php:227
+#: modules/shortcodes/layout3/elementor-layout3.php:227
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:227
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:197
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:227
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:227
+msgid "Trending Posts First"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:163
+#: modules/shortcodes/layout1/elementor-layout1.php:228
+#: modules/shortcodes/layout2/elementor-layout2.php:228
+#: modules/shortcodes/layout3/elementor-layout3.php:228
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:228
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:198
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:228
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:228
+msgid "Hot Posts First"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:164
+#: modules/shortcodes/layout1/elementor-layout1.php:229
+#: modules/shortcodes/layout2/elementor-layout2.php:229
+#: modules/shortcodes/layout3/elementor-layout3.php:229
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:229
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:199
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:229
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:229
+msgid "By Reaction"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:185
+#: modules/shortcodes/layout1/elementor-layout1.php:239
+#: modules/shortcodes/layout1/elementor-layout1.php:253
+#: modules/shortcodes/layout2/elementor-layout2.php:239
+#: modules/shortcodes/layout2/elementor-layout2.php:253
+#: modules/shortcodes/layout3/elementor-layout3.php:239
+#: modules/shortcodes/layout3/elementor-layout3.php:253
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:239
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:253
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:209
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:223
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:239
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:253
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:239
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:253
+msgid "Choose the reaction which you would like to use for sorting your posts. The posts that have the greatest number of your chosen reaction will be displayed first."
+msgstr ""
+
+#: lib/shortcode-params-functions.php:192
+#: modules/shortcodes/layout1/elementor-layout1.php:252
+#: modules/shortcodes/layout2/elementor-layout2.php:252
+#: modules/shortcodes/layout3/elementor-layout3.php:252
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:252
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:222
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:252
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:252
+msgid "Order"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:207
+#: modules/shortcodes/layout1/elementor-layout1.php:266
+#: modules/shortcodes/layout2/elementor-layout2.php:266
+#: modules/shortcodes/layout3/elementor-layout3.php:266
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:266
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:236
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:266
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:266
+msgid "Offset"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:214
+#: modules/shortcodes/layout1/elementor-layout1.php:274
+#: modules/shortcodes/layout2/elementor-layout2.php:274
+#: modules/shortcodes/layout3/elementor-layout3.php:274
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:274
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:274
+msgid "Show Filter"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:223
+#: modules/shortcodes/layout1/elementor-layout1.php:284
+#: modules/shortcodes/layout2/elementor-layout2.php:284
+#: modules/shortcodes/layout3/elementor-layout3.php:284
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:284
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:284
+msgid "Filter By"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:236
+#: modules/shortcodes/layout1/elementor-layout1.php:300
+#: modules/shortcodes/layout2/elementor-layout2.php:300
+#: modules/shortcodes/layout3/elementor-layout3.php:300
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:274
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:300
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:300
+msgid "Layout Title"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:243
+#: modules/shortcodes/layout1/elementor-layout1.php:308
+#: modules/shortcodes/layout2/elementor-layout2.php:308
+#: modules/shortcodes/layout3/elementor-layout3.php:308
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:282
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:308
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:308
+msgid "Layout Title Tag"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:287
+#: lib/shortcode-params-functions.php:445
+#: modules/shortcodes/layout1/elementor-layout1.php:328
+#: modules/shortcodes/layout2/elementor-layout2.php:328
+#: modules/shortcodes/layout3/elementor-layout3.php:328
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:302
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:288
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:328
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:328
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:27
+msgid "Title Tag"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:289
+#: lib/shortcode-params-functions.php:308
+#: lib/shortcode-params-functions.php:317
+#: lib/shortcode-params-functions.php:326
+#: lib/shortcode-params-functions.php:334
+#: lib/shortcode-params-functions.php:342
+#: lib/shortcode-params-functions.php:351
+#: lib/shortcode-params-functions.php:359
+#: lib/shortcode-params-functions.php:372
+#: lib/shortcode-params-functions.php:380
+#: lib/shortcode-params-functions.php:388
+#: lib/shortcode-params-functions.php:396
+#: lib/shortcode-params-functions.php:404
+msgid "Featured Post Item"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:295
+#: lib/shortcode-params-functions.php:453
+#: modules/shortcodes/layout1/elementor-layout1.php:338
+#: modules/shortcodes/layout2/elementor-layout2.php:338
+#: modules/shortcodes/layout3/elementor-layout3.php:338
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:312
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:298
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:338
+msgid "Image Size"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:297
+#: lib/shortcode-params-functions.php:367
+#: lib/shortcode-params-functions.php:455
+#: lib/shortcode-params-functions.php:525
+#: modules/shortcodes/layout1/elementor-layout1.php:427
+#: modules/shortcodes/layout1/widget/layout1.php:42
+#: modules/shortcodes/layout2/elementor-layout2.php:427
+#: modules/shortcodes/layout3/elementor-layout3.php:427
+#: modules/shortcodes/layout3/widget/layout3.php:42
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:401
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:247
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:374
+#: modules/shortcodes/post-slider1/post-slider1.php:179
+#: modules/shortcodes/post-slider1/post-slider1.php:191
+#: modules/shortcodes/post-slider1/post-slider1.php:219
+msgid "Default"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:298
+#: lib/shortcode-params-functions.php:456
+#: modules/shortcodes/layout1/elementor-layout1.php:342
+#: modules/shortcodes/layout2/elementor-layout2.php:342
+#: modules/shortcodes/layout3/elementor-layout3.php:342
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:316
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:302
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:342
+msgid "Thumbnail"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:300
+#: lib/shortcode-params-functions.php:458
+#: modules/shortcodes/layout1/elementor-layout1.php:344
+#: modules/shortcodes/layout2/elementor-layout2.php:344
+#: modules/shortcodes/layout3/elementor-layout3.php:344
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:318
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:304
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:344
+msgid "Large"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:301
+#: lib/shortcode-params-functions.php:459
+#: modules/shortcodes/layout1/elementor-layout1.php:345
+#: modules/shortcodes/layout2/elementor-layout2.php:345
+#: modules/shortcodes/layout3/elementor-layout3.php:345
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:319
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:248
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:305
+#: modules/shortcodes/post-slider1/post-slider1.php:180
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:345
+msgid "Landscape"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:302
+#: lib/shortcode-params-functions.php:460
+#: modules/shortcodes/layout1/elementor-layout1.php:346
+#: modules/shortcodes/layout2/elementor-layout2.php:346
+#: modules/shortcodes/layout3/elementor-layout3.php:346
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:320
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:306
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:346
+msgid "Portrait"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:303
+#: lib/shortcode-params-functions.php:461
+#: modules/shortcodes/layout1/elementor-layout1.php:347
+#: modules/shortcodes/layout2/elementor-layout2.php:347
+#: modules/shortcodes/layout3/elementor-layout3.php:347
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:321
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:249
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:307
+#: modules/shortcodes/post-slider1/post-slider1.php:181
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:347
+msgid "Square"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:304
+#: lib/shortcode-params-functions.php:462
+#: modules/shortcodes/layout1/elementor-layout1.php:348
+#: modules/shortcodes/layout2/elementor-layout2.php:348
+#: modules/shortcodes/layout3/elementor-layout3.php:348
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:322
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:308
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:348
+msgid "Full"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:305
+#: lib/shortcode-params-functions.php:463
+#: modules/shortcodes/layout1/elementor-layout1.php:349
+#: modules/shortcodes/layout2/elementor-layout2.php:349
+#: modules/shortcodes/layout3/elementor-layout3.php:349
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:323
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:309
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:349
+msgid "Custom"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:307
+#: lib/shortcode-params-functions.php:465
+#: modules/shortcodes/layout1/elementor-layout1.php:339
+#: modules/shortcodes/layout2/elementor-layout2.php:339
+#: modules/shortcodes/layout3/elementor-layout3.php:339
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:313
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:299
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:339
+msgid "Choose image size"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:314
+#: lib/shortcode-params-functions.php:472
+#: modules/shortcodes/layout1/elementor-layout1.php:358
+#: modules/shortcodes/layout2/elementor-layout2.php:358
+#: modules/shortcodes/layout3/elementor-layout3.php:358
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:332
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:358
+msgid "Custom Image Width"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:315
+#: lib/shortcode-params-functions.php:473
+#: modules/shortcodes/layout1/elementor-layout1.php:359
+#: modules/shortcodes/layout2/elementor-layout2.php:359
+#: modules/shortcodes/layout3/elementor-layout3.php:359
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:333
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:359
+msgid "Enter image width in px"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:323
+#: lib/shortcode-params-functions.php:481
+#: modules/shortcodes/layout1/elementor-layout1.php:370
+#: modules/shortcodes/layout2/elementor-layout2.php:370
+#: modules/shortcodes/layout3/elementor-layout3.php:370
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:344
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:370
+msgid "Custom Image Height"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:324
+#: lib/shortcode-params-functions.php:482
+#: modules/shortcodes/layout1/elementor-layout1.php:371
+#: modules/shortcodes/layout2/elementor-layout2.php:371
+#: modules/shortcodes/layout3/elementor-layout3.php:371
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:345
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:371
+msgid "Enter image height in px"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:332
+#: lib/shortcode-params-functions.php:490
+#: modules/shortcodes/layout1/elementor-layout1.php:382
+#: modules/shortcodes/layout2/elementor-layout2.php:382
+#: modules/shortcodes/layout3/elementor-layout3.php:382
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:356
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:318
+msgid "Display Categories"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:340
+#: lib/shortcode-params-functions.php:498
+#: modules/shortcodes/layout1/elementor-layout1.php:392
+#: modules/shortcodes/layout2/elementor-layout2.php:392
+#: modules/shortcodes/layout3/elementor-layout3.php:392
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:366
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:328
+msgid "Display Excerpt"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:348
+#: lib/shortcode-params-functions.php:505
+#: modules/shortcodes/layout1/elementor-layout1.php:402
+#: modules/shortcodes/layout2/elementor-layout2.php:402
+#: modules/shortcodes/layout3/elementor-layout3.php:402
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:376
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:338
+msgid "Max. Excerpt Length"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:349
+#: lib/shortcode-params-functions.php:507
+#: modules/shortcodes/layout1/elementor-layout1.php:403
+#: modules/shortcodes/layout2/elementor-layout2.php:403
+#: modules/shortcodes/layout3/elementor-layout3.php:403
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:377
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:339
+msgid "Enter max of words that can be shown for excerpt"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:357
+#: lib/shortcode-params-functions.php:515
+#: modules/shortcodes/layout1/elementor-layout1.php:414
+#: modules/shortcodes/layout2/elementor-layout2.php:414
+#: modules/shortcodes/layout3/elementor-layout3.php:414
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:388
+msgid "Display Date"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:365
+#: lib/shortcode-params-functions.php:522
+#: modules/shortcodes/layout1/elementor-layout1.php:424
+#: modules/shortcodes/layout2/elementor-layout2.php:424
+#: modules/shortcodes/layout3/elementor-layout3.php:424
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:398
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:370
+#: modules/shortcodes/post-slider1/post-slider1.php:216
+msgid "Publication Date Format"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:368
+#: lib/shortcode-params-functions.php:526
+#: modules/shortcodes/layout1/elementor-layout1.php:428
+#: modules/shortcodes/layout2/elementor-layout2.php:428
+#: modules/shortcodes/layout3/elementor-layout3.php:428
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:402
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:375
+#: modules/shortcodes/post-slider1/post-slider1.php:220
+msgid "Time from Publication"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:369
+#: lib/shortcode-params-functions.php:527
+#: modules/shortcodes/layout1/elementor-layout1.php:429
+#: modules/shortcodes/layout2/elementor-layout2.php:429
+#: modules/shortcodes/layout3/elementor-layout3.php:429
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:403
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:376
+#: modules/shortcodes/post-slider1/post-slider1.php:221
+msgid "Date of Publication"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:378
+#: lib/shortcode-params-functions.php:536
+#: modules/shortcodes/layout1/elementor-layout1.php:441
+#: modules/shortcodes/layout2/elementor-layout2.php:441
+#: modules/shortcodes/layout3/elementor-layout3.php:441
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:415
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:338
+msgid "Display Author"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:386
+msgid "Display Views"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:394
+#: lib/shortcode-params-functions.php:544
+#: modules/shortcodes/layout1/elementor-layout1.php:451
+#: modules/shortcodes/layout2/elementor-layout2.php:451
+#: modules/shortcodes/layout3/elementor-layout3.php:451
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:425
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:350
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:348
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:382
+msgid "Display Share"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:402
+#: lib/shortcode-params-functions.php:552
+#: modules/shortcodes/layout1/elementor-layout1.php:461
+#: modules/shortcodes/layout2/elementor-layout2.php:461
+#: modules/shortcodes/layout3/elementor-layout3.php:461
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:435
+msgid "Display Hot/Trending Icons"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:447
+#: lib/shortcode-params-functions.php:466
+#: lib/shortcode-params-functions.php:475
+#: lib/shortcode-params-functions.php:484
+#: lib/shortcode-params-functions.php:492
+#: lib/shortcode-params-functions.php:500
+#: lib/shortcode-params-functions.php:509
+#: lib/shortcode-params-functions.php:517
+#: lib/shortcode-params-functions.php:530
+#: lib/shortcode-params-functions.php:538
+#: lib/shortcode-params-functions.php:546
+#: lib/shortcode-params-functions.php:554
+#: modules/shortcodes/layout1/elementor-layout1.php:320
+#: modules/shortcodes/layout2/elementor-layout2.php:320
+#: modules/shortcodes/layout3/elementor-layout3.php:320
+#: modules/shortcodes/layout3/layout3.php:98
+#: modules/shortcodes/layout3/layout3.php:105
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:294
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:280
+#: modules/shortcodes/post-slider1/post-slider1.php:212
+#: modules/shortcodes/post-slider1/post-slider1.php:223
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:320
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:320
+msgid "Post Item"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:596
+#: modules/shortcodes/layout1/elementor-layout1.php:481
+#: modules/shortcodes/layout2/elementor-layout2.php:481
+#: modules/shortcodes/layout3/elementor-layout3.php:501
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:368
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:402
+msgid "Display Pagination"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:599
+#: modules/blog/admin/meta-boxes/news-post-meta.php:24
+#: modules/blog/admin/meta-boxes/news-post-meta.php:39
+#: modules/blog/admin/meta-boxes/news-post-meta.php:54
+#: modules/shortcodes/layout1/widget/layout1.php:44
+#: modules/shortcodes/layout1/widget/layout1.php:62
+#: modules/shortcodes/layout3/widget/layout3.php:44
+#: modules/shortcodes/post-slider1/post-slider1.php:193
+msgid "No"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:600
+#: modules/blog/admin/meta-boxes/news-post-meta.php:25
+#: modules/blog/admin/meta-boxes/news-post-meta.php:40
+#: modules/blog/admin/meta-boxes/news-post-meta.php:55
+#: modules/shortcodes/layout1/widget/layout1.php:43
+#: modules/shortcodes/layout1/widget/layout1.php:63
+#: modules/shortcodes/layout3/widget/layout3.php:43
+#: modules/shortcodes/post-slider1/post-slider1.php:192
+msgid "Yes"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:604
+#: lib/shortcode-params-functions.php:620
+#: lib/shortcode-params-functions.php:629
+#: modules/shortcodes/layout1/elementor-layout1.php:473
+#: modules/shortcodes/layout2/elementor-layout2.php:473
+#: modules/shortcodes/layout3/elementor-layout3.php:493
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:447
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:360
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:394
+msgid "Pagination"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:610
+#: modules/shortcodes/layout1/elementor-layout1.php:491
+#: modules/shortcodes/layout2/elementor-layout2.php:491
+#: modules/shortcodes/layout3/elementor-layout3.php:511
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:378
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:412
+msgid "Pagination Type"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:613
+#: modules/shortcodes/layout1/elementor-layout1.php:494
+#: modules/shortcodes/layout2/elementor-layout2.php:494
+#: modules/shortcodes/layout3/elementor-layout3.php:514
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:381
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:415
+msgid "Standard"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:614
+#: modules/shortcodes/layout1/elementor-layout1.php:495
+#: modules/shortcodes/layout2/elementor-layout2.php:495
+#: modules/shortcodes/layout3/elementor-layout3.php:515
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:382
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:416
+msgid "Load More"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:615
+#: modules/shortcodes/layout1/elementor-layout1.php:496
+#: modules/shortcodes/layout2/elementor-layout2.php:496
+#: modules/shortcodes/layout3/elementor-layout3.php:516
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:383
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:417
+msgid "Infinite Scroll"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:625
+#: modules/shortcodes/layout1/elementor-layout1.php:508
+#: modules/shortcodes/layout2/elementor-layout2.php:508
+#: modules/shortcodes/layout3/elementor-layout3.php:528
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:395
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:429
+msgid "Amount of navigation numbers"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:627
+#: modules/shortcodes/layout1/elementor-layout1.php:509
+#: modules/shortcodes/layout2/elementor-layout2.php:509
+#: modules/shortcodes/layout3/elementor-layout3.php:529
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:396
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:430
+msgid "Enter a number that will limit pagination numbers amount"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:669
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:455
+msgid "Display Navigation"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:672
+#: lib/shortcode-params-functions.php:680
+msgid "Navigation"
+msgstr ""
+
+#: lib/shortcode-params-functions.php:677
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:465
+msgid "Display Paging"
+msgstr ""
+
+#: lib/taxonomy-custom-fields.php:17
+msgid "Color"
+msgstr ""
+
+#: modules/blog/admin/meta-boxes/news-post-meta.php:19
+msgid "Featured Post"
+msgstr ""
+
+#: modules/blog/admin/meta-boxes/news-post-meta.php:20
+msgid "Choose whether post is featured or not"
+msgstr ""
+
+#: modules/blog/admin/meta-boxes/news-post-meta.php:34
+msgid "Trending Post"
+msgstr ""
+
+#: modules/blog/admin/meta-boxes/news-post-meta.php:35
+msgid "Choose whether post is trending or not"
+msgstr ""
+
+#: modules/blog/admin/meta-boxes/news-post-meta.php:49
+msgid "Hot Post"
+msgstr ""
+
+#: modules/blog/admin/meta-boxes/news-post-meta.php:50
+msgid "Choose whether post is hot or not"
+msgstr ""
+
+#: modules/blog/functions.php:205
+msgid "reply"
+msgstr ""
+
+#: modules/blog/functions.php:206
+msgid "edit"
+msgstr ""
+
+#: modules/blog/functions.php:211
+msgid "Pingback:"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:11
+msgid "No Comments"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:11
+msgid "1 Comment"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:11
+msgid " Comments"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:21
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:32
+#: modules/blog/single/news-template/parts/comments-form.php:37
+msgid "Post a Comment"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:35
+msgid "Post a Reply to %s"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:36
+msgid "cancel reply"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:38
+msgid "Your comment"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:42
+msgid "Your Name"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:43
+msgid "Your Email"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/comments-form.php:44
+msgid "Website"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/image.php:14
+msgid "Blog List Featured Image"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-info/author.php:4
+msgid "by"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-info/comments.php:5
+msgid "comments"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-info/comments.php:5
+msgid "comment"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-info/date.php:7
+#: modules/shortcodes/post-slider1/post-slider1.php:78
+#: modules/shortcodes/templates/parts/post-info/date.php:7
+msgid " ago"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-info/read-more.php:12
+#: modules/blog/single/news-template/parts/post-info/read-more.php:19
+msgid "READ MORE"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-info/share.php:3
+msgid "Share:"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-info/tags.php:7
+msgid "Tags:"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/post-type/audio.php:7
+msgid "Your browser don't support audio player"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/single/author-info.php:17
+msgid "About the Author"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/single/single-navigation.php:13
+msgid "Previous post"
+msgstr ""
+
+#: modules/blog/single/news-template/parts/single/single-navigation.php:17
+msgid "Next post"
+msgstr ""
+
+#: modules/like/like.php:139
+msgid "Like/Dislike this"
+msgstr ""
+
+#: modules/like/like.php:143
+msgid "You already liked/disliked this!"
+msgstr ""
+
+#: modules/reactions/functions.php:8
+#: modules/reactions/functions.php:18
+msgid "News Reactions"
+msgstr ""
+
+#: modules/reactions/functions.php:9
+msgid "News Reaction"
+msgstr ""
+
+#: modules/reactions/functions.php:10
+msgid "Search News Reactions"
+msgstr ""
+
+#: modules/reactions/functions.php:11
+msgid "All News Reactions"
+msgstr ""
+
+#: modules/reactions/functions.php:12
+msgid "Parent News Reaction"
+msgstr ""
+
+#: modules/reactions/functions.php:13
+msgid "Parent News Reaction:"
+msgstr ""
+
+#: modules/reactions/functions.php:14
+msgid "Edit News Reaction"
+msgstr ""
+
+#: modules/reactions/functions.php:15
+msgid "Update News Reaction"
+msgstr ""
+
+#: modules/reactions/functions.php:16
+msgid "Add New News Reaction"
+msgstr ""
+
+#: modules/reactions/functions.php:17
+msgid "New News Reaction Name"
+msgstr ""
+
+#: modules/reactions/reactions-custom-fields.php:17
+msgid "Reaction Image"
+msgstr ""
+
+#: modules/shortcodes/layout1/elementor-layout1.php:11
+#: modules/shortcodes/layout1/layout1.php:15
+msgid "Layout 1"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:7
+msgid "Qode Layout 1 Widget"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:8
+msgid "Display a layout 1"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:31
+#: modules/shortcodes/layout2/widget/layout2.php:31
+#: modules/shortcodes/layout3/widget/layout3.php:31
+#: modules/shortcodes/video-layout2/widget/video-layout2.php:31
+msgid "Widget Title"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:40
+msgid "Display Image"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:50
+msgid "Content Alignment"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:52
+msgid "Left"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:53
+msgid "Center"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:54
+msgid "Right"
+msgstr ""
+
+#: modules/shortcodes/layout1/widget/layout1.php:60
+msgid "Show Numbers"
+msgstr ""
+
+#: modules/shortcodes/layout2/elementor-layout2.php:11
+#: modules/shortcodes/layout2/layout2.php:15
+msgid "Layout 2"
+msgstr ""
+
+#: modules/shortcodes/layout2/widget/layout2.php:7
+msgid "Qode Layout 2 Widget"
+msgstr ""
+
+#: modules/shortcodes/layout2/widget/layout2.php:8
+msgid "Display a layout 2"
+msgstr ""
+
+#: modules/shortcodes/layout3/elementor-layout3.php:11
+#: modules/shortcodes/layout3/layout3.php:15
+msgid "Layout 3"
+msgstr ""
+
+#: modules/shortcodes/layout3/elementor-layout3.php:471
+#: modules/shortcodes/layout3/layout3.php:96
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:360
+#: modules/shortcodes/post-slider1/post-slider1.php:210
+msgid "Display 'Read More' Button"
+msgstr ""
+
+#: modules/shortcodes/layout3/elementor-layout3.php:481
+#: modules/shortcodes/layout3/layout3.php:103
+#: modules/shortcodes/layout3/widget/layout3.php:39
+msgid "Display Review"
+msgstr ""
+
+#: modules/shortcodes/layout3/templates/layout3-template.php:15
+msgid "Read More"
+msgstr ""
+
+#: modules/shortcodes/layout3/widget/layout3.php:7
+msgid "Qode Layout 3 Widget"
+msgstr ""
+
+#: modules/shortcodes/layout3/widget/layout3.php:8
+msgid "Display a layout 3"
+msgstr ""
+
+#: modules/shortcodes/post-carousel1/elementor-post-carousel1.php:11
+#: modules/shortcodes/post-carousel1/post-carousel1.php:15
+msgid "Post Carousel 1"
+msgstr ""
+
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:11
+#: modules/shortcodes/post-slider1/post-slider1.php:15
+msgid "Post Slider 1"
+msgstr ""
+
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:244
+#: modules/shortcodes/post-slider1/post-slider1.php:176
+msgid "Slider Size"
+msgstr ""
+
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:250
+#: modules/shortcodes/post-slider1/post-slider1.php:182
+msgid "Full Screen"
+msgstr ""
+
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:259
+#: modules/shortcodes/post-slider1/post-slider1.php:188
+msgid "Content in Grid"
+msgstr ""
+
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:269
+#: modules/shortcodes/post-slider1/post-slider1.php:199
+msgid "Content Padding"
+msgstr ""
+
+#: modules/shortcodes/post-slider1/elementor-post-slider1.php:270
+#: modules/shortcodes/post-slider1/post-slider1.php:201
+msgid "Insert content padding in (0px 5px 0px 5px) form"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/image.php:16
+msgid "Blog list featured image"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/pagination/load-more.php:15
+msgid "Load more"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/post-info/author.php:7
+msgid "By"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/post-info/comments.php:4
+msgid "Comments"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/post-info/comments.php:4
+msgid "Comment"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/post-info/read-more.php:10
+msgid "Read more"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/post-info/review.php:14
+msgid "stars"
+msgstr ""
+
+#: modules/shortcodes/templates/parts/post-info/views.php:6
+msgid "k"
+msgstr ""
+
+#: modules/shortcodes/video-layout1/elementor-video-layout1.php:11
+#: modules/shortcodes/video-layout1/video-layout1.php:15
+msgid "Video Layout 1"
+msgstr ""
+
+#: modules/shortcodes/video-layout2/elementor-video-layout2.php:11
+#: modules/shortcodes/video-layout2/video-layout2.php:15
+msgid "Video Layout 2"
+msgstr ""
+
+#: modules/shortcodes/video-layout2/widget/video-layout2.php:7
+msgid "Qode Video Layout 2 Widget"
+msgstr ""
+
+#: modules/shortcodes/video-layout2/widget/video-layout2.php:8
+msgid "Display a video layout 2"
+msgstr ""
+
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:7
+msgid "Qode Blog Categories/Reaction Widget"
+msgstr ""
+
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:8
+msgid "Dropdown widget for blog categories and reactions"
+msgstr ""
+
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:32
+msgid "Show"
+msgstr ""
+
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:35
+msgid "Categories and Reactions"
+msgstr ""
+
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:36
+msgid "Categories"
+msgstr ""
+
+#: modules/widgets/blog-categories-reactions/blog-categories-reactions.php:37
+msgid "Reactions"
+msgstr ""
+
+#: modules/widgets/lib/widget-class.php:95
+msgid "There are no options for this widget."
+msgstr ""

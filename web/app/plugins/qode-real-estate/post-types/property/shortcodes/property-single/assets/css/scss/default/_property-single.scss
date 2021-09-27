@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Property Single shortcode style - begin
+   ========================================================================== */
+
+.qodef-psg-shortcode {
+
+    .qodef-psg-gallery, .qodef-psg-content {
+        float: left;
+    }
+
+    .qodef-psg-gallery {
+        width: 66.66%;
+        position: relative;
+        box-sizing: border-box;
+        padding-right: 30px;
+        margin-top: 37px;
+
+        .qodef-psg-gallery-image {
+            display: block;
+
+            &:last-child {
+                position: absolute;
+                top: -40px;
+                right: 38px;
+                max-height: 100%;
+            }
+        }
+    }
+
+    .qodef-psg-content {
+        width: 33.33%;
+        padding-left: 60px;
+        box-sizing: border-box;
+    }
+
+    .qodef-psg-content {
+        .qodef-psg-price {
+            color: #e1e1e1;
+            font-size: 39px;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        .qodef-psg-info-label, .qodef-psg-full-address {
+            font-weight: 500;
+        }
+
+        .qodef-psg-full-address {
+            margin: 5px 0 36px;
+        }
+
+        .qodef-psg-info-label {
+            margin: 32px 0 0;
+        }
+
+        .qodef-psg-info-value {
+            margin: 14px 0 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Property Single shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,501 @@
+.single-qode-album {
+	.two_columns_50_50{
+		&>.column1{
+			&>.column_inner{
+				padding: 0 35px 0 0;
+			}
+		}
+		&>.column2{
+			&>.column_inner{
+				padding: 0 0 0 35px;
+			}
+		}
+	}
+
+	.qode-album-image {
+		margin-bottom: 75px;
+
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	.qode-audio-player-wrapper{
+		margin-bottom: 63px;
+	}
+
+	.qode-album-tracks-holder {
+		margin-bottom: 20px;
+
+		.qode-tracks-holder-title {
+			margin-bottom: 0px;
+		}
+
+		.qode-tracks-holder {
+			padding: 5px 0px;
+
+			.qode-track-holder {
+				padding: 15px 0px;
+
+				.fa-play {
+					display: none;
+					color: #000;
+					font-size: 12px;
+					margin-right: 7px;
+					position: relative;
+					top: -2px;
+				}
+
+				&.qode-active-track {
+					.fa-play {
+						display: inline-block;
+					}
+					.qode-track-number {
+						display: none;
+					}
+				}
+				.qode-track-title {
+					display: inline-block;
+					cursor: pointer;
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 1em;
+					letter-spacing: 0px;
+					color: #000;
+				}
+
+				.qode-track-buy {
+					float: right;
+					a {
+						color: #000;
+						text-decoration: underline;
+
+						&:hover {
+
+						}
+					}
+				}
+			}
+		}
+
+		.qode-album-track{
+			padding: 15px 0px;
+			box-sizing: border-box;
+
+			.qode-at-title{
+
+				font-weight: 500;
+			}
+		}
+	}
+
+	.qode-about-album-holder {
+		margin-bottom: 27px;
+
+		.qode-about-album-holder-title {
+			margin-bottom: 15px;
+		}
+	}
+
+	.qode-album-details-holder {
+		margin-bottom: 61px;
+
+		.qode-album-details span {
+
+		}
+	}
+
+	.qode-lyrics-holder {
+
+		.qode-lyrics-holder-inner {
+			margin-bottom: 60px;
+		}
+
+		.qode-lyrics-holder-title {
+			margin-bottom: 22px;
+		}
+
+		.qode-accordion-holder {
+			.qode-title-holder {
+				margin-bottom: 0;
+				background-color: transparent;
+
+				.qode-accordion-mark-icon{
+					font-size: 20px;
+					color: #000;
+				}
+
+				&.ui-state-active,
+				&.ui-state-hover{
+					background-color: transparent;
+				}
+			}
+
+			.qode-tab-title{
+				
+				span.qode-tab-title-inner {
+					padding-left: 0;
+					text-transform: uppercase;
+				}
+
+				height: 46px;
+			}
+
+			.qode-accordion-content{
+				padding: 10px 20px;
+			}
+		}
+	}
+
+	/* Reviews */
+	.qode-single-album-reviews-holder {
+		background-color: #f9f9f9;
+		padding: 55px;
+		margin-bottom: 82px;
+
+		.qode-single-album-reviews-title {
+			margin-bottom: 14px;
+		}
+
+		.qode-single-album-text {
+			margin-bottom: 32px;
+		}
+
+		.qode-single-album-author {
+
+			&:before{
+				content: "-";
+				position: relative;
+				margin-right: 7px;
+			}
+		}
+
+		.slick-slider .qode-slick-next,
+		.slick-slider .qode-slick-prev{
+			top: auto;
+			bottom: 0px;
+			right: 0;
+			@include qodeTransform(none);
+			font-size: 25px;
+			opacity: 1;
+		}
+
+		.slick-slider .qode-slick-prev{
+			right: 30px;
+			left: auto;
+			&:after {
+				content: "/";
+				font-size: 16px;
+				display: inline-block;
+				position: absolute;
+				right: -8px;
+				top: 0;
+			}
+		}
+
+		.qode-owl-slider{
+			.owl-nav{
+				position: absolute;
+				right: 0;
+				bottom: 15px;
+				font-size: 20px;
+
+				.owl-prev{
+					right: 19px;
+					left: initial;
+				}
+
+				.owl-next{
+					right: 0;
+				}
+			}
+		}
+	}
+
+	.qode-album-follow-share-holder {
+		.qode-social-share-title {
+			display: none;
+		}
+		.qode-album-follow-share-holder-title {
+			margin-bottom: 20px;
+		}
+
+		.qode-social-share-holder.qode-list li {
+			margin-right: 17px;
+			a {
+				font-size: 21px;
+			}
+		}
+	}
+
+	.qode-latest-video-holder {
+		margin-top: 43px;
+		.qode-latest-video-holder-title {
+			margin-bottom: 23px;
+		}
+	}
+
+	.qode-album-nav {
+		$nav-height :40px;
+		height: $nav-height;
+		line-height: $nav-height;
+		text-align: center;
+		position: relative;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-bottom: 70px;
+
+		.qode-album-nav-inner {
+			position: relative;
+		}
+
+		.qode-album-next,
+		.qode-album-prev,
+		.qode-album-back-btn {
+			height: $nav-height;
+		}
+
+		.qode-album-back-btn {
+			display: inline-block;
+
+			a{
+				color: #000;
+				@include qodeTransition(color 0.15s ease-in-out);
+
+				&:before{
+					content: "\f009";
+					font-size: 25px;
+					font-family: 'FontAwesome';
+					position: relative;
+					float: left;
+					width: 25px;
+				}
+
+				&:hover{
+					color: $first-main-color;
+				}
+			}
+		}
+
+		.qode-album-next a,
+		.qode-album-prev a{
+			color: #000;
+			line-height: $nav-height;
+			font-size: 30px;
+			font-weight: 400;
+			@include qodeTransition(color 0.15s ease-in-out);
+
+			&:hover {
+				color: $first-main-color;
+				@include qodeTransition(color 0.15s ease-in-out);
+			}
+		}
+
+		.qode-album-next,
+		.qode-album-prev {
+			position: absolute;
+			top: 0;
+
+			& a:before{
+				font-size: 30px;
+				font-family: 'FontAwesome';
+				position: relative;
+				float: left;
+				width: 30px;
+			}
+		}
+
+		.qode-album-prev {
+			left: 0;
+
+			& a:before{
+				content: "\f104";
+			}
+		}
+
+		.qode-album-next {
+			right: 0;
+
+			& a:before{
+				content: "\f105";
+			}
+		}
+	}
+
+	.qode-album-dark{
+
+		.qode-single-album-reviews-holder{
+			background-color: #191919;
+		}
+
+		.qode-single-album-reviews-holder{
+			.qode-owl-slider{
+				.owl-nav{
+					.qode-prev-icon,
+					.qode-next-icon{
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.qode-lyrics-holder{
+			.qode-accordion-holder{
+				.qode-title-holder{
+					border-bottom: 1px solid #2b2b2b;
+					&:last-of-type{
+						border-bottom: none;
+					}
+				}
+
+				.qode-tab-title{
+					span.qode-tab-title-inner{
+						color: #a09d9d;
+					}
+				}
+
+				.qode-accordion-mark-icon{
+					color: #fff;
+				}
+			}
+		}
+
+		.qode-album-tracks-holder{
+			.qode-tracks-holder{
+				.qode-track-holder{
+
+					&:not(:last-child){
+						border-bottom: 1px solid #2b2b2b;
+					}
+
+					.qode-track-title{
+						color: #a09d9d;
+					}
+
+					.qode-track-buy{
+						a{
+							color: #fff;
+						}
+					}
+
+					.fa-play{
+						color: #fff;
+					}
+
+					&.qode-active-track{
+						.qode-track-title{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		.qode-single-album-reviews-holder{
+			.qode-single-album-author{
+				color: #fff;
+			}
+		}
+
+		.qode-album-nav{
+			.qode-album-next,
+			.qode-album-prev,
+			.qode-album-back-btn{
+				a{
+					color: #fff;
+				}
+			}
+		}
+	}
+
+
+	/* Stores */
+	.qode-single-album-stores-holder {
+		padding: 20px 0 15px 0px;
+		.qode-single-album-stores-title {
+			margin-bottom: 16px;
+		}
+
+		.qode-single-album-store {
+			float: left;
+			padding-right: 10px;
+		}
+
+		.qode-single-album-store:nth-child(3n+1) {
+			clear: both;
+		}
+		.qode-single-album-store-link{
+			img{
+				margin-left: -4px;
+			}
+		}
+	}
+
+	/* Minimal */
+
+	.qode-album-minimal {
+		.qode-about-album-holder .qode-about-album-holder-title {
+			padding-top: 0;
+			border-top: none;
+		}
+
+		.qode-audio-player-wrapper{
+			margin: 0;
+		}
+
+		.qode-album-details-holder {
+			border-bottom: none;
+		}
+
+		.qode-single-album-stores-holder {
+
+			.qode-single-album-store {
+				float: none;
+				padding-left: 5px;
+				padding-right: 18px;
+				.qode-single-album-store-link {
+					font-size: 18px;
+					color: #858585;
+					line-height: 23px;
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+		}
+	}
+
+	/*Compact */
+
+	.qode-album-compact {
+
+		.qode-about-album-holder-title {
+			border-top: none;
+		}
+
+		.qode-single-album-stores-holder {
+			margin: 0 0 50px;
+			padding: 0;
+
+			.qode-single-album-store {
+				float: none;
+				padding-left: 5px;
+				padding-right: 18px;
+				.qode-single-album-store-link {
+					color:	#858585;
+					font-size: 18px;
+					line-height: 23px;
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+		}
+	}
+
+	.qode-album-comprehensive,
+	.qode-album-minimal,
+	.qode-album-compact {
+		padding-bottom: 70px;
+	}
+}

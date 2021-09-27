@@ -1,0 +1,535 @@
+/* ==========================================================================
+   Course shortcode style - begin
+   ========================================================================== */
+
+.qode-course-list-holder {
+    @include qodeRelativeHolderLayout();
+
+    /***** Article Global Style - begin *****/
+
+    article {
+        @include qodeRelativeHolderLayout();
+        box-sizing: border-box;
+
+
+        .touchevents & {
+            cursor: pointer;
+        }
+
+        .qode-cl-item-inner {
+            @include qodeRelativeHolderLayout();
+            @include qodeBoxShadow(3px 4px 8px 0px rgba($first-main-color, 0.1));
+            @include qodeBorderRadius(5px);
+        }
+
+        .qode-cli-image {
+            @include qodeRelativeHolderLayout();
+
+            img {
+                display: block;
+                width: 100%;
+                
+            }
+        }
+
+        .qode-cli-link {
+            @include qodeAbsoluteHolderLayout();
+            z-index: 1;
+        }
+
+        .qode-cli-text-wrapper {
+            @include qodeTableLayout();
+            box-sizing: content-box;
+        }
+
+        .qode-cli-text {
+            @include qodeTableCellLayout();
+
+            text-align: left;
+
+            .qode-cli-title {
+                margin: 0;
+            }
+
+            .qode-cli-category-holder {
+                position: relative;
+                display: block;
+                margin: 3px 0 0;
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0 6px 0 0;
+                    margin: 0 3px 0 0;
+                    z-index: 8;
+
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        right: -3px;
+                        content: '/';
+                        color: inherit;
+                        font-size: 12px;
+                        line-height: inherit;
+                    }
+
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.qode-cl-standard{
+        &.qode-cl-simple {
+            article {
+                display: block;
+                .qode-cl-item-inner {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                    .qode-cli-image {
+                        width: 38%;
+                        display: table-cell;
+                        height: 100%;
+
+                        img{
+                            @include qodeBorderRadius(5px 0 0 5px);
+                        }
+                    }
+                    .qode-cli-text-holder {
+                        width: 62%;
+                        display: table-cell;
+                        height: 100%;
+                        @include qodeBorderRadius(0 5px 5px 0);
+                        .qode-cli-text-wrapper{
+                            .qode-cli-excerpt{
+                                margin-bottom: 40px;
+                            }
+                        }
+                        .qode-cli-top-info {
+                            .qode-cli-title {
+                                display: inline-block;
+                                padding-right: 8px;
+                            }
+                            .qode-ci-price-holder {
+                                position: absolute;
+                                display: inline-block;
+                            }
+
+                            .qode-instructor-name {
+                                display: block;
+                            }
+                        }
+
+                        .qode-cli-bottom-info {
+                            .qode-cli-category-holder {
+                                float: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Article Global Style - end *****/
+
+    /***** Specific Global Style - begin *****/
+
+    &.qode-cl-has-filter {
+
+        .qode-cl-inner {
+            overflow: hidden;
+        }
+    }
+
+    /***** Specific Global Style - end *****/
+
+    /***** Course Types - begin *****/
+
+    &.qode-cl-gallery {
+
+        &:not(.qode-cl-one-column) {
+
+            article {
+                float: left;
+            }
+        }
+
+        $gallery_columns_number: ('two', 'three', 'four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.qode-cl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                article {
+                    width: 100% / ($i+2);
+                }
+
+                @if ($i > 1) { // set different break point for four and five columns
+                    @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else {
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Course Types - end *****/
+
+    /***** Additional Features - begin *****/
+
+    &.qode-cl-has-animation {
+
+        article {
+            opacity: 0;
+            @include qodeTransform(translateY(80px));
+            @include qodeTransition(opacity .8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform .8s cubic-bezier(0.34, 0.52, 0.57, 1.04));
+
+            &.qode-item-show {
+                opacity: 1;
+                @include qodeTransform(translateY(0));
+
+                &.qode-item-shown {
+                    @include qodeTransition(none);
+                }
+            }
+
+            .touchevents & {
+                opacity: 1;
+                @include qodeTransform(translateY(0));
+            }
+        }
+    }
+
+    /***** Additional Features - end *****/
+}
+
+.qode-course-list-widget{
+    .qode-course-list-holder {
+        article {
+            .qode-cl-item-inner {
+                @include qodeBoxShadow(none);
+            }
+        }
+
+        &.qode-cl-minimal{
+            article{
+                .qode-cli-text {
+                    h5 {
+                        a {
+                            color: #3b3f45;
+
+                            &:hover{
+                                color: $first-main-color!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Course shortcode style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course filter style - begin
+   ========================================================================== */
+
+.qode-cl-filter-holder {
+    @include qodeTableLayout();
+    margin: 0 0 47px;
+    text-align: center;
+    padding: 8px 0;
+    box-sizing: border-box;
+
+    .qode-course-layout-filter {
+        @include qodeTableCellLayout();
+        width: 65px;
+        box-sizing: content-box;
+        text-align: left;
+        padding-right: 24px;
+        color: $first-main-color;
+        span {
+            i {
+                vertical-align: middle;
+            }
+            &:first-child {
+                font-size: 26px;
+                margin-right: 9px;
+            }
+            &:last-child {
+                font-size: 22px
+            }
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+    .qode-course-items-counter {
+        font-size: 14px;
+        color: #ababab;
+        @include qodeTableCellLayout();
+        width: calc(33% - 55px);
+        text-align: left;
+    }
+    .qode-course-order-filter {
+        height: 36px;
+        width: 160px;
+        text-align: right;
+        border: 1px solid #f2f2f2;
+        color: $default-text-color;
+        padding-left: 12px;
+        font-size: 12px;
+        float: right;
+    }
+
+    .qode-course-items-order {
+        text-align: right;
+
+        .select2-container--default{
+            .select2-selection--single{
+                width: auto;
+                background-color: $first-main-color;
+                @include qodeBorderRadius(5px);
+                border: 1px solid $first-main-color;
+                color: #fff;
+                font-size: 13px;
+                .select2-selection__arrow{
+                    right: 15px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Course filter style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course standard pagination style - begin
+   ========================================================================== */
+
+.qode-Course-list-holder {
+
+    &.qode-cl-pag-standard {
+
+        .qode-cl-inner {
+            opacity: 1;
+            @include qodeTransition(opacity .2s ease-out);
+        }
+
+        &.qode-cl-pag-standard-animate {
+
+            .qode-cl-inner {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.qode-cl-standard-pagination {
+    margin: 20px 0 0;
+    float: right;
+
+    ul {
+        @include qodeRelativeHolderLayout();
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+        li {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 5px;
+            padding: 0;
+
+            a {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+            }
+
+            &.qode-cl-pag-active {
+
+                a {
+                    color: $first-main-color;
+                }
+            }
+
+            &.qode-cl-pag-prev,
+            &.qode-cl-pag-next {
+
+                a {
+                    font-size: 18px;
+                    @include qodeTransition(color .2s ease-out, opacity .2s ease-out);
+
+                    span {
+                        display: block;
+                        line-height: inherit;
+
+                        &:before {
+                            display: block;
+                            line-height: inherit;
+                        }
+                    }
+                }
+            }
+
+            &.qode-cl-pag-prev {
+                left: 0;
+
+                a {
+                    opacity: 0;
+                }
+            }
+
+            &.qode-cl-pag-next {
+                right: 0;
+
+                a {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Course standard pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course load more pagination style - begin
+   ========================================================================== */
+
+.qode-cl-load-more-holder {
+    @include qodeRelativeHolderLayout();
+
+    .qode-cl-load-more {
+        margin: 40px 0 0;
+        text-align: center;
+    }
+}
+/* ==========================================================================
+   Course load more pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course loading element style - begin
+   ========================================================================== */
+
+.qode-cl-loading {
+    position: relative;
+    display: none;
+    width: 100%;
+    margin: 40px 0 20px;
+    color: $default-heading-color;
+    text-align: center;
+
+    &.qode-filter-trigger {
+        position: absolute;
+        top: 250px;
+        left: 0;
+    }
+
+    &.qode-standard-pag-trigger {
+        position: absolute;
+        top: 50px;
+        left: 0;
+
+        .qode-cl-has-filter & {
+            top: 150px;
+        }
+    }
+
+    &.qode-showing {
+        display: block;
+    }
+
+    > div {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        margin: 0 3px;
+        background-color: $default-heading-color;
+        border-radius: 100%;
+        @include qodeAnimation(sk-bouncedelay 1.4s infinite ease-in-out both);
+    }
+
+    .qode-cl-loading-bounce1 {
+        -webkit-animation-delay: -0.32s;
+        -moz-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    .qode-cl-loading-bounce2 {
+        -webkit-animation-delay: -0.16s;
+        -moz-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@-moz-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -moz-transform: scale(0);
+    }
+    40% {
+        -moz-transform: scale(1.0);
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+/* ==========================================================================
+   Course loading element style - end
+   ========================================================================== */

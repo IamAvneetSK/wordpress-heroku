@@ -1,0 +1,412 @@
+# Copyright (C) 2020 Qode Themes
+# This file is distributed under the same license as the Qode Restaurant plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Qode Restaurant 3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/qode-restaurant\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-09-18T12:43:53+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: qode-restaurant\n"
+
+#. Plugin Name of the plugin
+#: helpers.php:72
+msgid "Qode Restaurant"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds features to our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Qode Themes"
+msgstr ""
+
+#: admin/options/restaurant/map.php:51
+#: admin/options/restaurant/map.php:89
+#: admin/options/restaurant/map.php:128
+#: admin/options/restaurant/map.php:167
+#: admin/options/restaurant/map.php:207
+#: admin/options/restaurant/map.php:248
+#: admin/options/restaurant/map.php:289
+#: modules/shortcodes/working-hours/templates/working-hours-template.php:36
+msgid "Closed"
+msgstr ""
+
+#: admin/options/restaurant/map.php:57
+#: admin/options/restaurant/map.php:95
+#: admin/options/restaurant/map.php:134
+#: admin/options/restaurant/map.php:173
+#: admin/options/restaurant/map.php:214
+#: admin/options/restaurant/map.php:255
+#: admin/options/restaurant/map.php:296
+msgid "Description"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/elementor-reservation-form.php:9
+#: modules/shortcodes/reservation-form/reservation-form.php:21
+msgid "Reservation Form"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/elementor-reservation-form.php:25
+#: modules/shortcodes/restaurant-timeline/elementor-restaurant-timeline.php:25
+#: modules/shortcodes/working-hours/elementor-working-hours.php:25
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:25
+msgid "General"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/elementor-reservation-form.php:33
+#: modules/shortcodes/reservation-form/reservation-form.php:29
+msgid "OpenTable ID"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/elementor-reservation-form.php:41
+#: modules/shortcodes/reservation-form/reservation-form.php:35
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:88
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:93
+msgid "Skin"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/elementor-reservation-form.php:44
+#: modules/shortcodes/reservation-form/reservation-form.php:38
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:91
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:96
+msgid "Dark"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/elementor-reservation-form.php:45
+#: modules/shortcodes/reservation-form/reservation-form.php:39
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:92
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:97
+msgid "Light"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:8
+msgid "1 Person"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:9
+msgid "2 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:10
+msgid "3 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:11
+msgid "4 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:12
+msgid "5 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:13
+msgid "6 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:14
+msgid "7 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:15
+msgid "8 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:16
+msgid "9 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:17
+msgid "10 People"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:80
+msgid "Book a Table"
+msgstr ""
+
+#: modules/shortcodes/reservation-form/templates/reservation-form.php:99
+msgid "You haven't added OpenTable ID"
+msgstr ""
+
+#: modules/shortcodes/restaurant-timeline/elementor-restaurant-timeline.php:9
+#: modules/shortcodes/restaurant-timeline/restaurant-timeline.php:23
+msgid "Restaurant Timeline"
+msgstr ""
+
+#: modules/shortcodes/restaurant-timeline/elementor-restaurant-timeline.php:35
+#: modules/shortcodes/restaurant-timeline/elementor-restaurant-timeline.php:43
+#: modules/shortcodes/restaurant-timeline/restaurant-timeline.php:38
+#: modules/shortcodes/working-hours/elementor-working-hours.php:33
+#: modules/shortcodes/working-hours/working-hours.php:29
+#: modules/widgets/working-hours/working-hours.php:25
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:33
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:123
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:48
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:114
+msgid "Title"
+msgstr ""
+
+#: modules/shortcodes/restaurant-timeline/elementor-restaurant-timeline.php:51
+#: modules/shortcodes/restaurant-timeline/restaurant-timeline.php:50
+msgid "Image"
+msgstr ""
+
+#: modules/shortcodes/restaurant-timeline/elementor-restaurant-timeline.php:59
+msgid "Restaurant Timeline Items"
+msgstr ""
+
+#: modules/shortcodes/restaurant-timeline/restaurant-timeline.php:26
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:42
+msgid "by QODE RESTAURANT"
+msgstr ""
+
+#: modules/shortcodes/restaurant-timeline/restaurant-timeline.php:31
+msgid "Restaurant Items"
+msgstr ""
+
+#: modules/shortcodes/restaurant-timeline/restaurant-timeline.php:45
+msgid "Text"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:9
+#: modules/shortcodes/working-hours/working-hours.php:21
+msgid "Working Hours"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:41
+#: modules/shortcodes/working-hours/working-hours.php:36
+#: modules/widgets/working-hours/working-hours.php:30
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:51
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:61
+msgid "Label"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:49
+#: modules/shortcodes/working-hours/working-hours.php:43
+#: modules/widgets/working-hours/working-hours.php:37
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:69
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:74
+msgid "Sublabel"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:57
+#: modules/shortcodes/working-hours/working-hours.php:50
+#: modules/widgets/working-hours/working-hours.php:42
+msgid "Items Title Tag"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:84
+#: modules/shortcodes/working-hours/working-hours.php:90
+msgid "Monday"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:100
+#: modules/shortcodes/working-hours/working-hours.php:106
+msgid "Tuesday"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:116
+#: modules/shortcodes/working-hours/working-hours.php:122
+msgid "Wednesday"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:132
+#: modules/shortcodes/working-hours/working-hours.php:138
+msgid "Thursday"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:148
+#: modules/shortcodes/working-hours/working-hours.php:154
+msgid "Friday"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:164
+#: modules/shortcodes/working-hours/working-hours.php:170
+msgid "Saturday"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:180
+#: modules/shortcodes/working-hours/working-hours.php:186
+msgid "Sunday"
+msgstr ""
+
+#: modules/shortcodes/working-hours/templates/working-hours-template.php:45
+msgid "Working hours are not set"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:10
+msgid "Qode Restaurant Working Hours"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:11
+msgid "Add Restaurant Working Hour Widget"
+msgstr ""
+
+#: post-types/restaurant-menu/admin/meta-boxes/restaurant-menu-meta-boxes.php:10
+msgid "Restaurant Menu Item Settings"
+msgstr ""
+
+#: post-types/restaurant-menu/admin/meta-boxes/restaurant-menu-meta-boxes.php:22
+msgid "Enter price for this restaurant menu item"
+msgstr ""
+
+#: post-types/restaurant-menu/admin/meta-boxes/restaurant-menu-meta-boxes.php:36
+msgid "Enter description for this restaurant menu item"
+msgstr ""
+
+#: post-types/restaurant-menu/admin/meta-boxes/restaurant-menu-meta-boxes.php:47
+msgid "Enter label for this restaurant menu item"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:49
+#: post-types/restaurant-menu/restaurant-menu-register.php:50
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:9
+msgid "Restaurant Menu"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:51
+msgid "Restaurant Menu Items"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:52
+#: post-types/restaurant-menu/restaurant-menu-register.php:55
+msgid "Add New Restaurant Menu Item"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:53
+msgid "Restaurant Menu Item"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:54
+msgid "New Restaurant Menu Item"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:56
+msgid "Edit Restaurant Menu Item"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:75
+#: post-types/restaurant-menu/restaurant-menu-register.php:76
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:146
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:137
+msgid "Restaurant Menu Category"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:77
+msgid "Search Restaurant Menu Categories"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:78
+msgid "All Restaurant Menu Categories"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:79
+msgid "Parent Restaurant Menu Category"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:80
+msgid "Parent Restaurant Menu Category:"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:81
+msgid "Edit Restaurant Menu Category"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:82
+msgid "Update Restaurant Menu Category"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:83
+msgid "Add New Restaurant Menu Category"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:84
+msgid "New Restaurant Menu Category Name"
+msgstr ""
+
+#: post-types/restaurant-menu/restaurant-menu-register.php:85
+msgid "Restaurant Menu Categories"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:77
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:81
+msgid "Show Featured Image?"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:78
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:89
+msgid "Use this option to show featured image of menu items"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:101
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:103
+msgid "Padding (ex. 10px 10px 10px 10px)"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:111
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:120
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:133
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:142
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:152
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:159
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:166
+msgid "Query and Layout Options"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:119
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:110
+msgid "Order By"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:122
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:113
+msgid "Menu Order"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:124
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:115
+msgid "Date"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:133
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:124
+msgid "Order"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:147
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:141
+msgid "Enter one cafe menu category slug (leave empty for showing all cafe menu categories)"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:155
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:146
+msgid "Number of Restaurant Menu Items"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:156
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:151
+msgid "(enter -1 to show all)"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/elementor-restaurant-menu-list.php:221
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:231
+msgid "Sorry, no menu items matched your criteria."
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:40
+msgid "Restaurant Menu List"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:85
+msgid "Yes"
+msgstr ""
+
+#: post-types/restaurant-menu/shortcodes/restaurant-menu-list.php:86
+msgid "No"
+msgstr ""

@@ -1,0 +1,44 @@
+.qodef-property-single-holder {
+    @include ipad-portrait {
+        .qodef-property-label-items-holder,
+        .qodef-property-label-style,
+        .qodef-property-items-style {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .qodef-property-label-style {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @include phone-landscape {
+        .qodef-property-floor-plans {
+            .qodef-accordion-holder {
+                .qodef-accordion-title-item {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    
+    @include phone-portrait {
+        .qodef-property-title-section {
+            .qodef-title-inline-part {
+                width: 40%;
+                &:nth-child(2n+1) {
+                    padding-left: 0;
+                }
+            }
+        }
+    
+        .qodef-property-floor-plans {
+            .qodef-accordion-holder {
+                .qodef-accordion-title-item {
+                    display: block;
+                }
+            }
+        }
+    }
+}

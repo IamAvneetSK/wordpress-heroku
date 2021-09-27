@@ -1,0 +1,68 @@
+.qode-comment-rating-box {
+	display: inline-block;
+	float: right;
+	margin-left: 18px;
+	
+	.qode-star-rating {
+		position: relative;
+		display: inline-block;
+		font-family: 'ElegantIcons';
+		color: #c8c8c8;
+		font-size: 16px;
+		letter-spacing: 5px;
+		cursor: pointer;
+		overflow: hidden;
+		@include qodeTransition(all 0.3s ease);
+		
+		&.active {
+			color: #ffd740;
+		}
+		
+		&:before {
+			content: '\e033';
+		}
+	}
+}
+
+.qode-course-single-holder{
+
+	.qode-course-reviews-list{
+		.qode-comments{
+			.qode-comment-list{
+				li{
+					border-top: 1px solid #ebebeb;
+					padding: 40px 0;
+					margin: 0;
+					list-style-type: none;
+
+					.qode-comment{
+						.qode-comment-image{
+							display: block;
+							width: 76px;
+							float: left;
+							img{
+								@include qodeBorderRadius(50%);
+							}
+						}
+
+						.qode-comment-text{
+							padding: 0 0 0 90px;
+
+							.qode-text-holder{
+								margin: 15px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.qode-comment-form{
+		text-align: center;
+		.comment-respond{
+			text-align: left;
+			display: none;
+		}
+	}
+}

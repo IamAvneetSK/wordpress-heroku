@@ -1,0 +1,13 @@
+/* Global Variables */
+@import '../../../../../themes/bridge/css/scss/variables';
+@import '../../../../../themes/bridge/css/scss/mixins';
+
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+@import '../../../post-types/**/assets/css/scss/default/**/*.scss';
+
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+@import '../../../modules/shortcodes/**/assets/css/scss/default/*.scss';

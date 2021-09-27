@@ -1,0 +1,17 @@
+.qodef-property-type-list-holder {
+	@include ipad-portrait {
+		.qodef-ptl-item {
+			padding: 0 14px;
+		}
+	}
+	@include phone-landscape {
+		.qodef-ptl-item {
+			display: inline-block;
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			border-left: 0;
+			text-align: left;
+		}
+	}
+}

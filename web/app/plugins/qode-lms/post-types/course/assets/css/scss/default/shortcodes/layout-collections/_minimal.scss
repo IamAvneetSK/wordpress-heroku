@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Course Item Layout - Minimal style - begin
+   ========================================================================== */
+
+.qode-course-list-holder {
+
+    &.qode-cl-minimal{
+
+        article {
+            .qode-cl-item-inner {
+                @include qodeTableLayout();
+            }
+            .qode-cli-image {
+                @include qodeTableCellLayout();
+                width: 105px;
+                padding-right: 17px;
+            }
+            .qode-cli-text-holder {
+                @include qodeTableCellLayout();
+            }
+            .qode-cli-text {
+                vertical-align: text-top;
+                .qode-instructor-name {
+                    font-size: 14px;
+                    color: #b9b9b9;
+                    font-weight: 600;
+                }
+            }
+            .qode-ci-price-holder {
+                font-size: 12px;
+                color: $first-main-color;
+                font-weight: 600;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Course Item Layout - Minimal style - end
+   ========================================================================== */

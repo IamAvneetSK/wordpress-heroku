@@ -1,0 +1,13 @@
+.widget {
+    &.dsidx-widget-single-listing-wrap {
+        .dsidx-widget-single-listing {
+            @include ipad-landscape {
+                .dsidx-widget-single-listing-slideshow {
+                    .dsidx-widget-single-listing-photo {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

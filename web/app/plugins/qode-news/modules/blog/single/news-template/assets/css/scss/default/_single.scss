@@ -1,0 +1,606 @@
+/* ==========================================================================
+   Blog Single style - begin
+   ========================================================================== */
+
+.qode-news-single-news-template {
+	
+	article {
+		margin: 0 0 35px;
+
+		.qode-post-info-hot-trending{
+			left: 0;
+			position: absolute;
+			top: 0;
+			z-index: 10;
+
+			.qode-post-info-trending,
+			.qode-post-info-hot{
+				.qode-news-ht-icon{
+					width: 28px;
+					height: 35px;
+					background-size: 16px 20px;
+				}
+			}
+		}
+
+		.qode-blog-video-holder{
+			iframe{
+				max-width: 100%;
+			}
+		}
+
+		.qode-post-text{
+			padding-left: 10%;
+		}
+
+		.qode-post-text-inner{
+			position: relative;
+		}
+
+		.qode-post-title{
+			margin-bottom: 25px;
+		}
+
+		.qode-post-text-main{
+			font-size: 16px;
+			color: #545454;
+		}
+		
+		.qode-post-info-top {
+			margin-top: -14px;
+			margin-bottom: 22px;
+
+			.qode-post-info-category a{
+				margin-left: 0;
+			}
+		}
+
+		&.format-video,
+		&.format-audio{
+			.qode-post-info-top {
+				margin-top: 37px;
+			}
+		}
+
+		&.format-gallery{
+			.flexslider, .portfolio_slider{
+				margin: 0;
+			}
+		}
+
+		.qode-post-info-after-title {
+			margin-bottom: 44px;
+			
+			> div {
+				position: relative;
+				display: inline-block;
+				padding-right: 8px;
+				margin-right: 3px;
+
+				i{
+					color: #c6c6c6;
+					font-size: 17px;
+					margin-right: 3px;
+					position: relative;
+					top: 3px;
+				}
+
+				a {
+					color: inherit;
+					
+					&:hover {
+						color: $default-heading-color;
+					}
+				}
+				
+				&:last-child {
+					padding-right: 0;
+					margin-right: 0;
+				}
+
+				.qode-post-info-icon{
+					padding-right: 5px;
+				}
+
+				&.qode-views-holder .qode-post-info-icon{
+					margin-right: 0;
+				}
+
+				&.qode-post-info-comments-holder i{
+					top: 6px;
+				}
+			}
+		}
+		
+		.qode-post-info-bottom {
+			@include qodeRelativeHolderLayout();
+			margin: 45px 0 0;
+			padding-bottom: 45px;
+			border-bottom: 1px dashed $default-border-color;
+			
+			.qode-post-info-bottom-left,
+			.qode-post-info-bottom-right {
+				position: relative;
+				display: inline-block;
+				width: 50%;
+				float: left;
+			}
+			
+			.qode-post-info-bottom-left {
+				width: 65%;
+
+				//to hold its width if no content is displayed
+				&:before{
+					content: '';
+					display: inline-block;
+					margin-left: -3px;
+				}
+				
+				> div {
+					position: relative;
+					display: inline-block;
+					padding-right: 8px;
+					margin-right: 3px;
+					color: $default-text-color;
+					
+					a {
+						color: inherit;
+						
+						&:hover {
+							color: $default-heading-color;
+						}
+					}
+					
+					&:after {
+						content: "/";
+						position: absolute;
+						top: 0;
+						right: -2px;
+					}
+					
+					&:last-child {
+						padding-right: 0;
+						margin-right: 0;
+						
+						&:after {
+							content: '';
+						}
+					}
+				}
+			}
+			
+			.qode-post-info-bottom-right {
+				width: 35%;
+				text-align: right;
+				
+				> div {
+					margin-left: 17px;
+					
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+
+		.qode-blog-share{
+			.qode-share-title{
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 10px 0 0;
+			}
+
+			.social_share_list_holder{
+				display: inline-block;
+				vertical-align: middle;
+
+				& > span {
+					display: none;
+				}
+
+				a{
+					font-size: 20px;
+				}
+			}
+		}
+
+		.qode-news-like-dislike,
+		.qode-news-like-disliked{
+			color: #292929;
+
+			.qode-news-like,
+			.qode-news-dislike{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 18px;
+				padding: 10px 15px;
+				border: 1px solid $default-border-color;
+				margin-right: -1px;
+				box-sizing: border-box;
+			}
+
+			span{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 16px;
+				font-weight: 600;
+				padding: 6px 19px;
+				border: 1px solid $default-border-color;
+				box-sizing: border-box;
+			}
+		}
+
+		.qode-tags-holder{
+			margin-top: 50px;
+			padding-bottom: 46px;
+			border-bottom: 1px dashed #dbdbdb;
+
+			.qode-tags-title{
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 20px 0 0;
+			}
+
+			a{
+				display: inline-block;
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				border: 1px solid $default-border-color;
+				padding: 2px 20px;
+				margin-right: 4px;
+				margin-bottom: 4px;
+				@include qodeTransform(color 0.3s ease);
+			}
+		}
+
+		&.format-link .qode-post-mark{
+			position: absolute;
+			top: 66px;
+			left: 6px;
+			color: #dfdddd;
+			font-size: 50px;
+			width: 50px;
+			@include qodeTransform(translateX(-70px));
+		}
+
+		&.format-quote .qode-post-mark{
+			position: absolute;
+			top: 38px;
+			left: 0;
+			color: #dfdddd;
+			font-size: 90px;
+			width: 90px;
+			@include qodeTransform(translateX(-88px));
+		}
+	}
+
+	.qode-blog-single-navigation {
+		position: relative;
+		display: table;
+		width: 100%;
+		vertical-align: middle;
+		padding: 0 0 0 10%;
+		clear: both;
+		box-sizing: border-box;
+
+		.qode-blog-single-navigation-inner {
+			padding: 0 0 50px;
+		}
+
+		.qode-blog-single-prev,
+		.qode-blog-single-next {
+			color: #c7c7c7;
+			background-color: #f6f6f6;
+			@include qodeTransition(color 0.2s ease, background-color 0.2s ease);
+
+			.qode-blog-single-nav-mark {
+				font-size: 25px;
+				line-height: inherit;
+				color: inherit;
+
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+
+			.qode-blog-single-nav-label {
+				color: inherit;
+				font-size: 15px;
+				font-weight: 600;
+			}
+
+			&:hover {
+				color: #fff;
+				background-color: #000;
+			}
+		}
+
+		.qode-blog-single-prev {
+			float: left;
+			padding: 8px 24px 8px 9px;
+
+			.qode-blog-single-nav-mark,
+			.qode-blog-single-nav-label {
+				float: left;
+			}
+
+			.qode-blog-single-nav-mark {
+				margin: 0 7px 0 0;
+			}
+		}
+
+		.qode-blog-single-next {
+			float: right;
+			padding: 8px 11px 8px 23px;
+
+			.qode-blog-single-nav-mark,
+			.qode-blog-single-nav-label {
+				float: right;
+			}
+
+			.qode-blog-single-nav-mark {
+				margin: 0 0 0 7px;
+			}
+		}
+	}
+
+	.qode-author-description {
+		@include qodeRelativeHolderLayout();
+		box-sizing: border-box;
+		padding-left: 10%;
+		margin-bottom: 17px;
+
+		.qode-author-description-inner {
+			min-height: 150px; // static height of author image -- qode-author-description-image
+			clear: both;
+		}
+
+		.qode-author-description-content {
+			@include qodeTableLayout();
+		}
+
+		.qode-author-description-image {
+			display: table-cell;
+			vertical-align: middle;
+			width: 150px;
+
+			img {
+				display: block;
+				border-radius: 100%;
+			}
+		}
+
+		.qode-author-description-text-holder {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			padding: 4px 0 4px 35px;
+
+			.qode-author-name {
+				margin: 0;
+
+				a {
+					color: #222222;
+
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+
+			.qode-author-email {
+				margin: 0;
+			}
+
+			.qode-author-text {
+				@include qodeRelativeHolderLayout();
+
+				> p {
+					margin: 14px 0 10px;
+				}
+			}
+		}
+
+		@include ipad-portrait {
+			.qode-author-description-content {
+				padding: 0;
+			}
+			.qode-author-description-image {
+				display: block;
+				width: 100%;
+			}
+			.qode-author-description-text-holder {
+				display: block;
+				padding: 0;
+				margin-top: 30px;
+			}
+		}
+	}
+
+	/* ==========================================================================
+   #Comments styles - start
+   ========================================================================== */
+
+	.qode-comment-holder {
+		@include qodeRelativeHolderLayout();
+		padding: 0;
+		box-sizing: border-box;
+		padding-left: 10%;
+
+		.qode-comment-holder-inner {
+			padding: 41px 0 20px;
+		}
+
+		.qode-comment {
+
+			&.qode-pingback-comment {
+
+				.qode-comment-text {
+					padding: 0;
+				}
+			}
+		}
+
+		.qode-comment-list {
+			list-style: none;
+			position: relative;
+			z-index: 150;
+			padding: 0;
+			margin: 0;
+
+			li {
+				@include qodeRelativeHolderLayout();
+				padding: 0;
+				margin: 40px 0 0;
+			}
+
+			> li:first-child {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+
+			.children {
+				padding: 0 0 0 100px;
+			}
+		}
+
+		.qode-comments-title {
+			margin-bottom: 28px;
+
+			> * {
+				margin: 0;
+			}
+		}
+
+		.qode-comment-image {
+			position: relative;
+			display: block;
+			top: 10px;
+			left: 0;
+			width: 82px;
+			height: 82px;
+			float: left;
+
+			img {
+				display: block;
+				border-radius: 4em;
+			}
+		}
+
+		.qode-comment-text {
+			padding: 0 0 0 108px;
+			min-height: 82px;
+
+			.qode-comment-info {
+				@include qodeRelativeHolderLayout();
+				margin: 6px 0 2px;
+			}
+
+			.comment-respond + .qode-edit-reply-holder{
+				display: none;
+			}
+
+			.qode-edit-reply-holder{
+				position: absolute;
+				top: 2px;
+				right: 0;
+				z-index: 10;
+			}
+
+			.replay,
+			.comment-reply-link,
+			.comment-edit-link {
+				color: #bcbcbc;
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+
+				&:hover {
+					color: #222222;
+				}
+			}
+
+			.comment-reply-link:not(:only-child){
+				margin-right: 10px;
+			}
+
+			.qode-comment-name {
+				display: inline-block;
+				margin: 0 5px 0 0;
+			}
+
+			.qode-comment-date {
+				display: inline-block;
+				color: #c6c6c6;
+				font-size: 14px;
+			}
+
+			.qode-text-holder p {
+				margin: 7px 0;
+			}
+
+			.comment-respond {
+				margin: 20px 0;
+
+				.comment-reply-title {
+					margin: 0 0 10px;
+					font-size: 14px;
+				}
+
+				.logged-in-as {
+					margin: 0 0 8px;
+				}
+			}
+
+			#cancel-comment-reply-link {
+				font-size: 12px;
+				color: $first-main-color;
+
+				&:hover {
+					color: #222222;
+				}
+			}
+
+			ul, ol {
+
+				li {
+					display: list-item;
+				}
+			}
+
+			li {
+				margin: 0 !important;
+				padding: 0 !important;
+				border: 0 !important;
+			}
+		}
+	}
+
+	.qode-comment-form {
+		padding: 0 0 0 10%;
+		clear: both;
+		box-sizing: border-box;
+
+		.qode-comment-form-inner {
+			padding: 19px 0 60px;
+		}
+
+		.comment-reply-title {
+			margin: 0 0 7px;
+		}
+
+		.logged-in-as {
+			margin: 0 0 25px;
+		}
+	}
+
+	/* ==========================================================================
+       #Comments styles - end
+       ========================================================================== */
+}
+/* ==========================================================================
+   Blog Single style - end
+   ========================================================================== */

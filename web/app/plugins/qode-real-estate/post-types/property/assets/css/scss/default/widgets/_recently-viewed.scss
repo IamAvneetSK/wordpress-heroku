@@ -1,0 +1,19 @@
+.widget {
+    &.qodef-recently-viewed-property-widget {
+        .qodef-widget-title-holder {
+            display: block;
+            padding: 0;
+        }
+
+        article {
+            &:last-child {
+                margin: 0;
+            }
+            &:hover {
+                .qodef-pli-title a {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+}

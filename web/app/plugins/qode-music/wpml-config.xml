@@ -1,0 +1,19 @@
+<wpml-config>
+	<custom-fields>
+        <custom-field action="translate">qode_album_people</custom-field>
+        <custom-field action="translate">qode_album_video_link_meta</custom-field>
+        <custom-field action="translate">qode_album_back_to_link</custom-field>
+        <custom-field action="translate">qode_event_item_organized_by</custom-field>
+        <custom-field action="translate">qode_event_back_to_link</custom-field>
+    </custom-fields>
+	<custom-types>
+		<custom-type translate="1">qode-album</custom-type>
+		<custom-type translate="1">qode-event</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">qode-album-genre</taxonomy>
+		<taxonomy translate="1">qode-album-label</taxonomy>
+		<taxonomy translate="1">qode-album-artist</taxonomy>
+		<taxonomy translate="1">qode-event-type</taxonomy>
+	</taxonomies>
+</wpml-config>

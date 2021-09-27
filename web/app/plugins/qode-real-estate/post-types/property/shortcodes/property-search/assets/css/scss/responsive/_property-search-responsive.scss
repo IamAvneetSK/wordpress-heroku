@@ -1,0 +1,11 @@
+.qodef-property-search-holder {
+	@include phone-landscape {
+		.qodef-search-type-section {
+			.qodef-property-type-list-holder {
+				.qodef-ptl-item {
+					border-left: 0;
+				}
+			}
+		}
+	}
+}
