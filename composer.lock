@@ -446,7 +446,7 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.9.2",
+            "version": "5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
