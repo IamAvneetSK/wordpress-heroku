@@ -8,7 +8,7 @@
     "packages": [
         {
             "name": "composer/ca-bundle",
-            "version": "1.1.0",
+            "version": "1.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
@@ -64,16 +64,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.0.1",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "db191abd24b0be110c98ba2271ca992e1c70962f"
+                "reference": "77b8aca1b41174a67f27be066558f8a96f489916f4cded2bead3cab6a3f33590"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/composer/composer/zipball/db191abd24b0be110c98ba2271ca992e1c70962f",
-                "reference": "db191abd24b0be110c98ba2271ca992e1c70962f",
+                "reference": "77b8aca1b41174a67f27be066558f8a96f489916f4cded2bead3cab6a3f33590",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.5.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
