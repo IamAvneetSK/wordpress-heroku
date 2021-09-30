@@ -64,7 +64,7 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.0.1",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
