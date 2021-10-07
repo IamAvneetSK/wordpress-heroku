@@ -5,10 +5,14 @@
  * @package AMP
  */
 
+use AmpProject\Dom\Document;
+
 /**
  * Class AMP_Comments_Sanitizer
  *
  * Strips and corrects attributes in forms.
+ *
+ * @internal
  */
 class AMP_Comments_Sanitizer extends AMP_Base_Sanitizer {
 
@@ -40,14 +44,13 @@ class AMP_Comments_Sanitizer extends AMP_Base_Sanitizer {
 				$action = $comment_form->getAttribute( 'action' );
 			}
 			$action_path = wp_parse_url( $action, PHP_URL_PATH );
-			if ( preg_match( '#/wp-comments-post\.php$#', $action_path ) ) {
+			if ( 'wp-comments-post.php' === basename( $action_path ) ) {
 				$this->process_comment_form( $comment_form );
 			}
 		}
 
 		if ( ! empty( $this->args['comments_live_list'] ) ) {
-			$xpath    = new DOMXPath( $this->dom );
-			$comments = $xpath->query( '//amp-live-list/*[ @items ]/*[ starts-with( @id, "comment-" ) ]' );
+			$comments = $this->dom->xpath->query( '//amp-live-list/*[ @items ]/*[ starts-with( @id, "comment-" ) ]' );
 
 			foreach ( $comments as $comment ) {
 				$this->add_amp_live_list_comment_attributes( $comment );
@@ -63,31 +66,27 @@ class AMP_Comments_Sanitizer extends AMP_Base_Sanitizer {
 	 * @param DOMElement $comment_form Comment form.
 	 */
 	protected function process_comment_form( $comment_form ) {
-		/**
-		 * Element.
-		 *
-		 * @var DOMElement $element
-		 */
-
-		/**
-		 * Named input elements.
-		 *
-		 * @var DOMElement[][] $form_fields
-		 */
 		$form_fields = [];
 		foreach ( $comment_form->getElementsByTagName( 'input' ) as $element ) {
+			/** @var DOMElement $element */
 			$name = $element->getAttribute( 'name' );
 			if ( $name ) {
 				$form_fields[ $name ][] = $element;
 			}
 		}
 		foreach ( $comment_form->getElementsByTagName( 'textarea' ) as $element ) {
+			/** @var DOMElement $element */
 			$name = $element->getAttribute( 'name' );
 			if ( $name ) {
 				$form_fields[ $name ][] = $element;
 			}
 		}
 
+		/**
+		 * Named input elements.
+		 *
+		 * @var DOMElement[][] $form_fields
+		 */
 		if ( empty( $form_fields['comment_post_ID'] ) ) {
 			return;
 		}
@@ -110,7 +109,7 @@ class AMP_Comments_Sanitizer extends AMP_Base_Sanitizer {
 			}
 		}
 
-		$amp_bind_attr_format = AMP_DOM_Utils::AMP_BIND_DATA_ATTR_PREFIX . '%s';
+		$amp_bind_attr_format = Document::AMP_BIND_DATA_ATTR_PREFIX . '%s';
 		foreach ( $form_fields as $name => $form_field ) {
 			foreach ( $form_field as $element ) {
 
