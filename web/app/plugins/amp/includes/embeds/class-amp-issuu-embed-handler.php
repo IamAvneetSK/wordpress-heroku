@@ -8,8 +8,6 @@
 
 /**
  * Class AMP_Issuu_Embed_Handler
- *
- * @internal
  */
 class AMP_Issuu_Embed_Handler extends AMP_Base_Embed_Handler {
 	/**
@@ -36,9 +34,9 @@ class AMP_Issuu_Embed_Handler extends AMP_Base_Embed_Handler {
 	/**
 	 * Filter oEmbed HTML for Meetup to prepare it for AMP.
 	 *
-	 * @param mixed  $return The oEmbed HTML.
+	 * @param mixed  $return The shortcode callback function to call.
 	 * @param string $url    The attempted embed URL.
-	 * @param array  $attr   Attributes.
+	 * @param array  $attr   An array of shortcode attributes.
 	 * @return string Embed.
 	 */
 	public function filter_embed_oembed_html( $return, $url, $attr ) {

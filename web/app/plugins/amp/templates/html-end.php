@@ -19,17 +19,7 @@
  */
 ?>
 
-<?php
-/**
- * Fires just before printing the </body> closing tag.
- *
- * @since 0.2
- * @see wp_footer()
- *
- * @param AMP_Post_Template $this
- */
-do_action( 'amp_post_template_footer', $this );
-?>
+<?php do_action( 'amp_post_template_footer', $this ); ?>
 
 </body>
 </html>

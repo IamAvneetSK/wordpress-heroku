@@ -12,12 +12,6 @@
  * @package AMP
  */
 
-/**
- * Context.
- *
- * @var AMP_Post_Template $this
- */
-
 $featured_image = $this->get( 'featured_image' );
 
 if ( empty( $featured_image ) ) {

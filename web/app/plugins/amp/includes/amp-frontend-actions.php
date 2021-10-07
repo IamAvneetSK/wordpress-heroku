@@ -2,7 +2,6 @@
 /**
  * Callbacks for adding AMP-related things to the main theme.
  *
- * @codeCoverageIgnore
  * @deprecated Function in this file has been moved to amp-helper-functions.php.
  * @package AMP
  */
@@ -22,7 +21,7 @@ _deprecated_file(
 /**
  * Add amphtml link to frontend.
  *
- * @deprecated Use amp_add_amphtml_link() instead.
+ * @deprecated
  *
  * @since 0.2
  * @since 1.0 Deprecated
