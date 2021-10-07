@@ -8,8 +8,6 @@
 
 /**
  * Class AMP_Service_Worker.
- *
- * @internal
  */
 class AMP_Service_Worker {
 
@@ -66,27 +64,6 @@ class AMP_Service_Worker {
 	}
 
 	/**
-	 * Register a caching route.
-	 *
-	 * @param WP_Service_Worker_Scripts $service_workers Service workers.
-	 * @param string                    $route           Route.
-	 * @param string                    $strategy        Strategy name.
-	 * @param array                     $args            Strategy args.
-	 * @param array                     $plugins         Plugins.
-	 */
-	private static function register_caching_route( WP_Service_Worker_Scripts $service_workers, $route, $strategy, $args = [], $plugins = [] ) {
-		$caching_routes = $service_workers->caching_routes();
-		if ( defined( 'PWA_VERSION' ) && version_compare( PWA_VERSION, '0.6', '<' ) ) {
-			$args['strategy'] = $strategy;
-			$args['plugins']  = $plugins;
-			$caching_routes->register( $route, $args );
-		} else {
-			$args = array_merge( $args, $plugins );
-			$caching_routes->register( $route, $strategy, $args );
-		}
-	}
-
-	/**
 	 * Add query var for iframe service worker request.
 	 *
 	 * @param array $vars Query vars.
@@ -132,10 +109,11 @@ class AMP_Service_Worker {
 		);
 
 		// Serve the AMP Runtime from cache and check for an updated version in the background. See <https://github.com/ampproject/amp-by-example/blob/4593af61609898043302a101826ddafe7206bfd9/boilerplate-generator/templates/files/serviceworkerJs.js#L54-L58>.
-		self::register_caching_route(
-			$service_workers,
+		$service_workers->caching_routes()->register(
 			'^https:\/\/cdn\.ampproject\.org\/.*',
-			WP_Service_Worker_Caching_Routes::STRATEGY_STALE_WHILE_REVALIDATE
+			[
+				'strategy' => WP_Service_Worker_Caching_Routes::STRATEGY_STALE_WHILE_REVALIDATE,
+			]
 		);
 	}
 
@@ -152,20 +130,19 @@ class AMP_Service_Worker {
 			return;
 		}
 
-		self::register_caching_route(
-			$service_workers,
+		$service_workers->caching_routes()->register(
 			'^' . preg_quote( set_url_scheme( content_url( '/' ), 'https' ), '/' ) . '[^\?]+?\.(?:png|gif|jpg|jpeg|svg|webp)(\?.*)?$',
-			WP_Service_Worker_Caching_Routes::STRATEGY_CACHE_FIRST,
 			[
+				'strategy'  => WP_Service_Worker_Caching_Routes::STRATEGY_CACHE_FIRST,
 				'cacheName' => 'images',
-			],
-			[
-				'cacheableResponse' => [
-					'statuses' => [ 0, 200 ],
-				],
-				'expiration'        => [
-					'maxEntries'    => 60,
-					'maxAgeSeconds' => MONTH_IN_SECONDS,
+				'plugins'   => [
+					'cacheableResponse' => [
+						'statuses' => [ 0, 200 ],
+					],
+					'expiration'        => [
+						'maxEntries'    => 60,
+						'maxAgeSeconds' => MONTH_IN_SECONDS,
+					],
 				],
 			]
 		);
@@ -176,7 +153,7 @@ class AMP_Service_Worker {
 	 *
 	 * @link https://developers.google.com/web/tools/workbox/guides/common-recipes#google_fonts
 	 * @link https://github.com/ampproject/amp-by-example/blob/4593af61609898043302a101826ddafe7206bfd9/boilerplate-generator/templates/files/serviceworkerJs.js#L76-L103
-	 * @link https://github.com/GoogleChromeLabs/pwa-wp/blob/d0eb52a2f348259123f39941093813f1351c0e21/integrations/class-wp-service-worker-fonts-integration.php
+	 * @link https://github.com/xwp/pwa-wp/blob/master/integrations/class-wp-service-worker-fonts-integration.php
 	 *
 	 * @param WP_Service_Worker_Scripts $service_workers Service workers.
 	 */
@@ -192,30 +169,28 @@ class AMP_Service_Worker {
 		}
 
 		// Cache the Google Fonts stylesheets with a stale while revalidate strategy.
-		self::register_caching_route(
-			$service_workers,
+		$service_workers->caching_routes()->register(
 			'^https:\/\/fonts\.googleapis\.com',
-			WP_Service_Worker_Caching_Routes::STRATEGY_STALE_WHILE_REVALIDATE,
 			[
+				'strategy'  => WP_Service_Worker_Caching_Routes::STRATEGY_STALE_WHILE_REVALIDATE,
 				'cacheName' => 'google-fonts-stylesheets',
 			]
 		);
 
 		// Cache the Google Fonts webfont files with a cache first strategy for 1 year.
-		self::register_caching_route(
-			$service_workers,
+		$service_workers->caching_routes()->register(
 			'^https:\/\/fonts\.gstatic\.com',
-			WP_Service_Worker_Caching_Routes::STRATEGY_CACHE_FIRST,
 			[
+				'strategy'  => WP_Service_Worker_Caching_Routes::STRATEGY_CACHE_FIRST,
 				'cacheName' => 'google-fonts-webfonts',
-			],
-			[
-				'cacheableResponse' => [
-					'statuses' => [ 0, 200 ],
-				],
-				'expiration'        => [
-					'maxAgeSeconds' => YEAR_IN_SECONDS,
-					'maxEntries'    => 30,
+				'plugins'   => [
+					'cacheableResponse' => [
+						'statuses' => [ 0, 200 ],
+					],
+					'expiration'        => [
+						'maxAgeSeconds' => YEAR_IN_SECONDS,
+						'maxEntries'    => 30,
+					],
 				],
 			]
 		);
@@ -266,20 +241,27 @@ class AMP_Service_Worker {
 	 * Add hooks to install the service worker from AMP page.
 	 */
 	public static function add_install_hooks() {
-		if ( ! amp_is_request() ) {
-			return;
-		}
+		if ( current_theme_supports( 'amp' ) && is_amp_endpoint() ) {
+			add_action( 'wp_footer', [ __CLASS__, 'install_service_worker' ] );
 
-		// Prevent validation error due to the script that installs the service worker on non-AMP pages.
-		foreach ( [ 'wp_print_scripts', 'wp_print_footer_scripts' ] as $action ) {
-			$priority = has_action( $action, 'wp_print_service_workers' );
-			if ( false !== $priority ) {
-				remove_action( $action, 'wp_print_service_workers', $priority );
+			// Prevent validation error due to the script that installs the service worker on non-AMP pages.
+			foreach ( [ 'wp_print_scripts', 'wp_print_footer_scripts' ] as $action ) {
+				$priority = has_action( $action, 'wp_print_service_workers' );
+				if ( false !== $priority ) {
+					remove_action( $action, 'wp_print_service_workers', $priority );
+				}
 			}
 		}
 
-		add_action( 'wp_footer', [ __CLASS__, 'install_service_worker' ] );
+		// Reader mode integration.
 		add_action( 'amp_post_template_footer', [ __CLASS__, 'install_service_worker' ] );
+		add_filter(
+			'amp_post_template_data',
+			static function ( $data ) {
+				$data['amp_component_scripts']['amp-install-serviceworker'] = true;
+				return $data;
+			}
+		);
 	}
 
 	/**

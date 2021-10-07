@@ -3,12 +3,9 @@ namespace Sabberworm\CSS\Parsing;
 
 use Sabberworm\CSS\Comment\Comment;
 use Sabberworm\CSS\Parsing\UnexpectedTokenException;
-use Sabberworm\CSS\Parsing\UnexpectedEOFException;
 use Sabberworm\CSS\Settings;
 
 class ParserState {
-	const EOF = null;
-
 	private $oParserSettings;
 
 	private $sText;
@@ -30,9 +27,7 @@ class ParserState {
 	public function setCharset($sCharset) {
 		$this->sCharset = $sCharset;
 		$this->aText = $this->strsplit($this->sText);
-		if( is_array($this->aText) ) {
-			$this->iLength = count($this->aText);
-		}
+		$this->iLength = count($this->aText);
 	}
 
 	public function getCharset() {
@@ -48,40 +43,14 @@ class ParserState {
 		return $this->oParserSettings;
 	}
 
-	public function parseIdentifier($bIgnoreCase = true, $bNameStartCodePoint = true) {
-        $sResult = null;
-        $bCanParseCharacter = true;
-
-        if ( $bNameStartCodePoint ) {
-            // Check if 3 code points would start an identifier. See <https://drafts.csswg.org/css-syntax-3/#would-start-an-identifier>.
-            $sNameStartCodePoint = '[a-zA-Z_]|[\x80-\xFF]';
-            $sEscapeCode = '\\[^\r\n\f]';
-
-            if (
-                ! (
-                    preg_match("/^-([-${sNameStartCodePoint}]|${sEscapeCode})/isSu", $this->peek(3)) ||
-                    preg_match("/^${sNameStartCodePoint}/isSu", $this->peek()) ||
-                    preg_match("/^${sEscapeCode}/isS", $this->peek(2))
-                )
-            ) {
-                $bCanParseCharacter = false;
-            }
-        }
-
-        if ( $bCanParseCharacter ) {
-            $sResult = $this->parseCharacter(true);
-        }
-
+	public function parseIdentifier($bIgnoreCase = true) {
+		$sResult = $this->parseCharacter(true);
 		if ($sResult === null) {
 			throw new UnexpectedTokenException($sResult, $this->peek(5), 'identifier', $this->iLineNo);
 		}
 		$sCharacter = null;
 		while (($sCharacter = $this->parseCharacter(true)) !== null) {
-			if (preg_match('/[a-zA-Z0-9\x{00A0}-\x{FFFF}_-]/Sux', $sCharacter)) {
-				$sResult .= $sCharacter;
-			} else {
-				$sResult .= '\\' . $sCharacter;
-			}
+			$sResult .= $sCharacter;
 		}
 		if ($bIgnoreCase) {
 			$sResult = $this->strtolower($sResult);
@@ -123,13 +92,13 @@ class ParserState {
 		}
 		if ($bIsForIdentifier) {
 			$peek = ord($this->peek());
-			// Matches a name code point. See <https://drafts.csswg.org/css-syntax-3/#name-code-point>.
+			// Ranges: a-z A-Z 0-9 - _
 			if (($peek >= 97 && $peek <= 122) ||
 				($peek >= 65 && $peek <= 90) ||
 				($peek >= 48 && $peek <= 57) ||
 				($peek === 45) ||
 				($peek === 95) ||
-				($peek > 0x81)) {
+				($peek > 0xa1)) {
 				return $this->consume(1);
 			}
 		} else {
@@ -147,7 +116,8 @@ class ParserState {
 			if($this->oParserSettings->bLenientParsing) {
 				try {
 					$oComment = $this->consumeComment();
-				} catch(UnexpectedEOFException $e) {
+				} catch(UnexpectedTokenException $e) {
+					// When we can’t find the end of a comment, we assume the document is finished.
 					$this->iCurrentPosition = $this->iLength;
 					return;
 				}
@@ -188,7 +158,7 @@ class ParserState {
 			return $mValue;
 		} else {
 			if ($this->iCurrentPosition + $mValue > $this->iLength) {
-				throw new UnexpectedEOFException($mValue, $this->peek(5), 'count', $this->iLineNo);
+				throw new UnexpectedTokenException($mValue, $this->peek(5), 'count', $this->iLineNo);
 			}
 			$sResult = $this->substr($this->iCurrentPosition, $mValue);
 			$iLineCount = substr_count($sResult, "\n");
@@ -242,8 +212,7 @@ class ParserState {
 		$out = '';
 		$start = $this->iCurrentPosition;
 
-		while (!$this->isEnd()) {
-			$char = $this->consume(1);
+		while (($char = $this->consume(1)) !== '') {
 			if (in_array($char, $aEnd)) {
 				if ($bIncludeEnd) {
 					$out .= $char;
@@ -258,12 +227,8 @@ class ParserState {
 			}
 		}
 
-		if (in_array(self::EOF, $aEnd)) {
-			return $out;
-		}
-
 		$this->iCurrentPosition = $start;
-		throw new UnexpectedEOFException('One of ("'.implode('","', $aEnd).'")', $this->peek(5), 'search', $this->iLineNo);
+		throw new UnexpectedTokenException('One of ("'.implode('","', $aEnd).'")', $this->peek(5), 'search', $this->iLineNo);
 	}
 
 	private function inputLeft() {
@@ -287,22 +252,22 @@ class ParserState {
 			return mb_strlen($sString, $this->sCharset);
 		} else {
 			return strlen($sString);
-		}
-	}
+		}	
+	}	
 
 	private function substr($iStart, $iLength) {
 		if ($iLength < 0) {
 			$iLength = $this->iLength - $iStart + $iLength;
-		}
+		}	
 		if ($iStart + $iLength > $this->iLength) {
 			$iLength = $this->iLength - $iStart;
-		}
+		}	
 		$sResult = '';
 		while ($iLength > 0) {
 			$sResult .= $this->aText[$iStart];
 			$iStart++;
 			$iLength--;
-		}
+		}	
 		return $sResult;
 	}
 
