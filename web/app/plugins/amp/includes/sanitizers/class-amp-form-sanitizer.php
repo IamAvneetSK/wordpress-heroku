@@ -6,12 +6,16 @@
  * @since 0.7
  */
 
+use AmpProject\DevMode;
+use AmpProject\Dom\Document;
+
 /**
  * Class AMP_Form_Sanitizer
  *
  * Strips and corrects attributes in forms.
  *
  * @since 0.7
+ * @internal
  */
 class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 
@@ -25,7 +29,7 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 	public static $tag = 'form';
 
 	/**
-	 * Sanitize the <form> elements from the HTML contained in this instance's DOMDocument.
+	 * Sanitize the <form> elements from the HTML contained in this instance's Dom\Document.
 	 *
 	 * @link https://www.ampproject.org/docs/reference/components/amp-form
 	 * @since 0.7
@@ -35,7 +39,7 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 		/**
 		 * Node list.
 		 *
-		 * @var DOMNodeList $node
+		 * @var DOMNodeList $nodes
 		 */
 		$nodes     = $this->dom->getElementsByTagName( self::$tag );
 		$num_nodes = $nodes->length;
@@ -46,7 +50,7 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 
 		for ( $i = $num_nodes - 1; $i >= 0; $i-- ) {
 			$node = $nodes->item( $i );
-			if ( ! $node instanceof DOMElement || $this->has_dev_mode_exemption( $node ) ) {
+			if ( ! $node instanceof DOMElement || DevMode::hasExemptionForNode( $node ) ) {
 				continue;
 			}
 
@@ -82,9 +86,6 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 				if ( ! $xhr_action ) {
 					// Record that action was converted to action-xhr.
 					$action_url = add_query_arg( AMP_HTTP::ACTION_XHR_CONVERTED_QUERY_VAR, 1, $action_url );
-					if ( ! amp_is_canonical() ) {
-						$action_url = add_query_arg( amp_get_slug(), '', $action_url );
-					}
 					$node->setAttribute( 'action-xhr', $action_url );
 					// Append success/error handlers if not found.
 					$this->ensure_response_message_elements( $node );
@@ -122,6 +123,7 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 		 * https URL and must not be a link to a CDN".
 		 */
 		if ( ! $action_url ) {
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotValidated
 			return esc_url_raw( '//' . $_SERVER['HTTP_HOST'] . wp_unslash( $_SERVER['REQUEST_URI'] ) );
 		}
 
@@ -149,14 +151,17 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 		}
 
 		if ( ! isset( $parsed_url['host'] ) ) {
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotValidated, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 			$parsed_url['host'] = $_SERVER['HTTP_HOST'];
 		}
 
 		if ( ! isset( $parsed_url['path'] ) ) {
 			// If there is action URL path, use the one from the request.
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.ValidatedSanitizedInput.InputNotValidated
 			$parsed_url['path'] = trailingslashit( wp_unslash( $_SERVER['REQUEST_URI'] ) );
 		} elseif ( '' !== $parsed_url['path'] && '/' !== $parsed_url['path'][0] ) {
 			// If the path is relative, append it to the current request path.
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.ValidatedSanitizedInput.InputNotValidated
 			$parsed_url['path'] = trailingslashit( wp_unslash( $_SERVER['REQUEST_URI'] ) ) . trailingslashit( $parsed_url['path'] );
 		}
 
@@ -193,23 +198,20 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 	 * @param DOMElement $form The form node to check.
 	 */
 	public function ensure_response_message_elements( $form ) {
-		/**
-		 * Parent node.
-		 *
-		 * @var DOMElement $parent
-		 */
 		$elements = [
 			'submit-error'   => null,
 			'submit-success' => null,
 			'submitting'     => null,
 		];
 
-		$templates = $form->getElementsByTagName( 'template' );
-		for ( $i = $templates->length - 1; $i >= 0; $i-- ) {
-			$parent = $templates->item( $i )->parentNode;
-			foreach ( array_keys( $elements ) as $attribute ) {
-				if ( $parent->hasAttribute( $attribute ) ) {
-					$elements[ $attribute ] = $parent;
+		$templates = $this->dom->xpath->query( Document::XPATH_MUSTACHE_TEMPLATE_ELEMENTS_QUERY, $form );
+		foreach ( $templates as $template ) {
+			$parent = $template->parentNode;
+			if ( $parent instanceof DOMElement ) {
+				foreach ( array_keys( $elements ) as $attribute ) {
+					if ( $parent->hasAttribute( $attribute ) ) {
+						$elements[ $attribute ] = $parent;
+					}
 				}
 			}
 		}
@@ -228,6 +230,7 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 			} else {
 				$p = $this->dom->createElement( 'p' );
 				$p->setAttribute( 'class', '{{#redirecting}}amp-wp-form-redirecting{{/redirecting}}' );
+				// phpcs:ignore WordPressVIPMinimum.Security.Mustache.OutputNotation -- Sanitization applied via amp-mustache.
 				$p->appendChild( $this->dom->createTextNode( '{{#message}}{{{message}}}{{/message}}' ) );
 
 				// Show generic message for HTTP success/failure.
@@ -249,6 +252,7 @@ class AMP_Form_Sanitizer extends AMP_Base_Sanitizer {
 				$link = $this->dom->createElement( 'a' );
 				$link->setAttribute( 'href', 'https://amp-wp.org/?p=5463' );
 				$link->setAttribute( 'target', '_blank' );
+				$link->setAttribute( 'rel', 'nofollow noreferrer noopener' );
 				$link->appendChild( $this->dom->createTextNode( __( 'Learn More', 'amp' ) ) );
 				$small->appendChild( $link );
 				$p->appendChild( $small );
