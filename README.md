@@ -32,6 +32,7 @@ All resources used in this project are free-of-charge. You can upgrade them post
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+
 Using this button you can deploy a new instance of WordPress.
 
 All required extensions (MySQL DB) will be deployed automatically.
